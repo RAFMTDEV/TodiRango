@@ -7,11 +7,27 @@ export async function getRecipeById(id: string): Promise<Recipe | null> {
   return RECIPES.find((r) => r.id === id) ?? null;
 }
 
-/** Sorteia uma receita que use pelo menos um dos ingredientes marcados.
- *  TODO: decidir se exige todos os ingredientes e priorizar quem usa mais. */
-export async function getRandomRecipe(have: string[]): Promise<Recipe | null> {
-  const set = new Set(have.map(norm));
-  const matches = RECIPES.filter((r) => r.ingredients.some((i) => set.has(norm(i.name))));
-  if (matches.length === 0) return null;
-  return matches[Math.floor(Math.random() * matches.length)];
+/** Sorteia uma receita usando os ingredientes selecionados,
+ * evitando as receitas que já apareceram recentemente.
+ */
+export async function getRandomRecipe(
+  have: string[],
+  excludedIds: string[] = []
+): Promise<Recipe | null> {
+  const ingredients = new Set(have.map(norm));
+  const excluded = new Set(excludedIds);
+
+  const matches = RECIPES.filter((recipe) =>
+    recipe.ingredients.some((ingredient) =>
+      ingredients.has(norm(ingredient.name))
+    )
+  );
+
+  const available = matches.filter(
+    (recipe) => !excluded.has(recipe.id)
+  );
+
+  if (available.length === 0) return null;
+
+  return available[Math.floor(Math.random() * available.length)];
 }
