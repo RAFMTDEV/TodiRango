@@ -1,0 +1,157 @@
+[
+{"id": "omelete-de-queijo", "title": "Omelete de queijo", "category": "cafe-da-manha", "prepTimeMinutes": 10, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "2 ovos"}, {"id": "queijo", "text": "2 fatias de muçarela picadas"}, {"id": "sal", "text": "1 pitada de sal"}, {"id": "oleo", "text": "1 fio de óleo"}, {"id": "cheiro-verde", "text": "Cheiro-verde a gosto", "optional": true}],
+  "steps": [
+    {"text": "Bata os ovos com o sal num prato fundo até ficarem bem misturados."},
+    {"text": "Aqueça o óleo numa frigideira antiaderente em fogo médio-baixo e despeje os ovos."},
+    {"text": "Deixe cozinhar sem mexer até as bordas firmarem.", "timer": 120},
+    {"text": "Espalhe o queijo e o cheiro-verde sobre metade da omelete, dobre ao meio e deixe o queijo derreter.", "timer": 60}
+  ]},
+{"id": "ovos-mexidos-cremosos", "title": "Ovos mexidos cremosos", "category": "cafe-da-manha", "prepTimeMinutes": 8, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "3 ovos"}, {"id": "manteiga", "text": "1 colher (chá) de manteiga"}, {"id": "requeijao", "text": "1 colher (sopa) de requeijão", "optional": true}, {"id": "sal", "text": "Sal a gosto"}],
+  "steps": [
+    {"text": "Bata levemente os ovos com uma pitada de sal."},
+    {"text": "Derreta a manteiga em fogo baixo e junte os ovos."},
+    {"text": "Mexa devagar com uma espátula, puxando dos lados para o centro, até quase firmar.", "timer": 180},
+    {"text": "Desligue o fogo, misture o requeijão e sirva na hora, ainda cremoso."}
+  ]},
+{"id": "tapioca-de-queijo-e-presunto", "title": "Tapioca de queijo e presunto", "category": "cafe-da-manha", "prepTimeMinutes": 10, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "goma-tapioca", "text": "4 colheres (sopa) de goma de tapioca"}, {"id": "queijo", "text": "2 fatias de muçarela"}, {"id": "presunto", "text": "2 fatias de presunto"}],
+  "steps": [
+    {"text": "Passe a goma por uma peneira direto na frigideira fria, formando um disco uniforme."},
+    {"text": "Leve ao fogo médio até a goma grudar e formar uma massa única.", "timer": 90},
+    {"text": "Vire a tapioca, coloque o queijo e o presunto em metade e dobre."},
+    {"text": "Deixe mais um pouco até o queijo derreter.", "timer": 60}
+  ]},
+{"id": "cuscuz-nordestino-com-ovo", "title": "Cuscuz nordestino com ovo", "category": "cafe-da-manha", "prepTimeMinutes": 20, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "flocao", "text": "2 xícaras de flocão de milho"}, {"id": "agua", "text": "1 xícara de água"}, {"id": "sal", "text": "1 colher (chá) de sal"}, {"id": "ovo", "text": "2 ovos"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga", "optional": true}],
+  "steps": [
+    {"text": "Misture o flocão com o sal e vá molhando com a água aos poucos até ficar úmido, mas soltinho."},
+    {"text": "Deixe hidratar.", "timer": 600},
+    {"text": "Coloque água na parte de baixo da cuscuzeira, a massa em cima sem apertar e tampe. Cozinhe em fogo médio.", "timer": 600},
+    {"text": "Enquanto isso, frite os ovos. Sirva o cuscuz com manteiga e os ovos por cima."}
+  ]},
+{"id": "panqueca-de-banana-e-aveia", "title": "Panqueca de banana e aveia", "category": "cafe-da-manha", "prepTimeMinutes": 15, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "banana", "text": "1 banana madura"}, {"id": "ovo", "text": "1 ovo"}, {"id": "aveia", "text": "3 colheres (sopa) de aveia"}, {"id": "canela", "text": "Canela a gosto", "optional": true}, {"id": "mel", "text": "Mel para servir", "optional": true}],
+  "steps": [
+    {"text": "Amasse bem a banana com um garfo."},
+    {"text": "Misture o ovo, a aveia e a canela até virar uma massa grossa."},
+    {"text": "Unte levemente uma frigideira e despeje pequenas porções da massa. Doure em fogo baixo.", "timer": 120},
+    {"text": "Vire e doure o outro lado. Sirva com mel.", "timer": 90}
+  ]},
+{"id": "pao-de-queijo", "title": "Pão de queijo", "category": "lanche", "prepTimeMinutes": 50, "servings": 6, "difficulty": "media",
+  "ingredients": [{"id": "polvilho", "text": "2 xícaras de polvilho azedo"}, {"id": "leite", "text": "1 xícara de leite"}, {"id": "oleo", "text": "1/2 xícara de óleo"}, {"id": "sal", "text": "1 colher (chá) de sal"}, {"id": "ovo", "text": "2 ovos"}, {"id": "queijo-minas", "text": "1 1/2 xícara de queijo minas meia cura ralado"}],
+  "steps": [
+    {"text": "Ferva o leite com o óleo e o sal e escalde o polvilho, mexendo até formar uma massa grudenta."},
+    {"text": "Espere amornar.", "timer": 600},
+    {"text": "Junte os ovos um a um e o queijo, sovando até a massa ficar lisa."},
+    {"text": "Com as mãos untadas, faça bolinhas e coloque numa assadeira, com espaço entre elas."},
+    {"text": "Asse em forno preaquecido a 200 °C até dourar.", "timer": 1500}
+  ]},
+{"id": "misto-quente", "title": "Misto-quente", "category": "lanche", "prepTimeMinutes": 8, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "pao-de-forma", "text": "2 fatias de pão de forma"}, {"id": "queijo", "text": "2 fatias de muçarela"}, {"id": "presunto", "text": "2 fatias de presunto"}, {"id": "manteiga", "text": "Manteiga para passar"}],
+  "steps": [
+    {"text": "Passe manteiga no lado de fora das fatias de pão."},
+    {"text": "Monte o sanduíche com o queijo e o presunto no meio."},
+    {"text": "Doure numa frigideira em fogo baixo, apertando com a espátula.", "timer": 150},
+    {"text": "Vire e doure o outro lado até o queijo derreter.", "timer": 120}
+  ]},
+{"id": "crepioca", "title": "Crepioca", "category": "cafe-da-manha", "prepTimeMinutes": 10, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "1 ovo"}, {"id": "goma-tapioca", "text": "2 colheres (sopa) de goma de tapioca"}, {"id": "sal", "text": "1 pitada de sal"}, {"id": "queijo", "text": "Queijo para rechear", "optional": true}, {"id": "tomate", "text": "Tomate picado para rechear", "optional": true}],
+  "steps": [
+    {"text": "Bata o ovo com a goma de tapioca e o sal até ficar homogêneo."},
+    {"text": "Despeje numa frigideira antiaderente untada, espalhando bem. Cozinhe em fogo baixo.", "timer": 120},
+    {"text": "Vire, recheie com queijo e tomate e dobre ao meio.", "timer": 60}
+  ]},
+{"id": "vitamina-de-banana", "title": "Vitamina de banana", "category": "bebida", "prepTimeMinutes": 5, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "banana", "text": "2 bananas"}, {"id": "leite", "text": "2 xícaras de leite gelado"}, {"id": "aveia", "text": "2 colheres (sopa) de aveia", "optional": true}, {"id": "mel", "text": "1 colher (sopa) de mel", "optional": true}],
+  "steps": [
+    {"text": "Descasque as bananas e corte em pedaços."},
+    {"text": "Bata tudo no liquidificador até ficar cremoso."},
+    {"text": "Sirva na hora para não escurecer."}
+  ]},
+{"id": "bolinho-de-chuva", "title": "Bolinho de chuva", "category": "lanche", "prepTimeMinutes": 30, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "farinha-trigo", "text": "2 xícaras de farinha de trigo"}, {"id": "ovo", "text": "2 ovos"}, {"id": "leite", "text": "3/4 de xícara de leite"}, {"id": "acucar", "text": "1/2 xícara de açúcar, mais um pouco para empanar"}, {"id": "fermento", "text": "1 colher (sopa) de fermento químico"}, {"id": "canela", "text": "Canela para empanar"}, {"id": "oleo", "text": "Óleo para fritar"}],
+  "steps": [
+    {"text": "Misture os ovos, o açúcar e o leite. Junte a farinha aos poucos e, por último, o fermento."},
+    {"text": "Aqueça o óleo em fogo médio. Com duas colheres, pingue porções da massa."},
+    {"text": "Frite até dourar por igual, virando na metade.", "timer": 240},
+    {"text": "Escorra em papel-toalha e passe na mistura de açúcar com canela."}
+  ]},
+{"id": "pao-de-alho", "title": "Pão de alho caseiro", "category": "lanche", "prepTimeMinutes": 15, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "pao", "text": "4 pães franceses"}, {"id": "alho", "text": "4 dentes de alho amassados"}, {"id": "manteiga", "text": "3 colheres (sopa) de manteiga"}, {"id": "maionese", "text": "1 colher (sopa) de maionese", "optional": true}, {"id": "queijo", "text": "Muçarela ralada", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde picado", "optional": true}],
+  "steps": [
+    {"text": "Misture a manteiga, o alho, a maionese e o cheiro-verde até virar uma pasta."},
+    {"text": "Faça cortes nos pães sem separar as fatias e recheie com a pasta. Cubra com queijo."},
+    {"text": "Asse em forno preaquecido a 200 °C até dourar.", "timer": 600}
+  ]},
+{"id": "sanduiche-de-atum", "title": "Sanduíche de atum", "category": "lanche", "prepTimeMinutes": 10, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "atum", "text": "1 lata de atum escorrido"}, {"id": "maionese", "text": "2 colheres (sopa) de maionese"}, {"id": "pao-de-forma", "text": "4 fatias de pão de forma"}, {"id": "alface", "text": "Folhas de alface", "optional": true}, {"id": "tomate", "text": "1 tomate em rodelas", "optional": true}, {"id": "milho", "text": "2 colheres (sopa) de milho", "optional": true}],
+  "steps": [
+    {"text": "Misture o atum com a maionese e o milho. Acerte o sal."},
+    {"text": "Espalhe a pasta em duas fatias de pão."},
+    {"text": "Cubra com alface, tomate e as outras fatias. Corte na diagonal."}
+  ]},
+{"id": "cachorro-quente", "title": "Cachorro-quente", "category": "lanche", "prepTimeMinutes": 25, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "salsicha", "text": "8 salsichas"}, {"id": "pao", "text": "8 pães de cachorro-quente ou franceses"}, {"id": "molho-tomate", "text": "1 sachê de molho de tomate"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "tomate", "text": "1 tomate picado", "optional": true}, {"id": "batata-palha", "text": "Batata palha", "optional": true}, {"id": "milho", "text": "Milho", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola num fio de óleo até murchar.", "timer": 180},
+    {"text": "Junte as salsichas cortadas, o tomate e o molho. Cozinhe em fogo baixo.", "timer": 600},
+    {"text": "Abra os pães, recheie com as salsichas e o molho e finalize com milho e batata palha."}
+  ]},
+{"id": "pipoca-de-panela", "title": "Pipoca de panela", "category": "lanche", "prepTimeMinutes": 8, "servings": 3, "difficulty": "facil",
+  "ingredients": [{"id": "milho-pipoca", "text": "1/2 xícara de milho de pipoca"}, {"id": "oleo", "text": "3 colheres (sopa) de óleo"}, {"id": "sal", "text": "Sal a gosto"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga derretida", "optional": true}],
+  "steps": [
+    {"text": "Coloque o óleo e 3 grãos de milho na panela tampada em fogo médio-alto."},
+    {"text": "Quando os 3 grãos estourarem, junte o resto do milho e tampe."},
+    {"text": "Chacoalhe a panela de vez em quando até os estouros ficarem espaçados.", "timer": 180},
+    {"text": "Desligue, tempere com sal e manteiga derretida."}
+  ]},
+{"id": "sanduiche-natural-de-frango", "title": "Sanduíche natural de frango", "category": "lanche", "prepTimeMinutes": 15, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "1 xícara de frango cozido e desfiado"}, {"id": "requeijao", "text": "2 colheres (sopa) de requeijão"}, {"id": "cenoura", "text": "1 cenoura ralada"}, {"id": "pao-de-forma", "text": "4 fatias de pão de forma"}, {"id": "alface", "text": "Folhas de alface", "optional": true}, {"id": "milho", "text": "2 colheres (sopa) de milho", "optional": true}],
+  "steps": [
+    {"text": "Misture o frango com o requeijão, a cenoura e o milho. Acerte o sal."},
+    {"text": "Recheie as fatias de pão com a pasta e a alface."},
+    {"text": "Corte ao meio e sirva, ou embrulhe em plástico e guarde na geladeira."}
+  ]},
+{"id": "mingau-de-aveia", "title": "Mingau de aveia", "category": "cafe-da-manha", "prepTimeMinutes": 10, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "aveia", "text": "3 colheres (sopa) de aveia"}, {"id": "leite", "text": "1 xícara de leite"}, {"id": "acucar", "text": "1 colher (sopa) de açúcar ou mel"}, {"id": "canela", "text": "Canela a gosto", "optional": true}, {"id": "banana", "text": "1 banana em rodelas", "optional": true}],
+  "steps": [
+    {"text": "Misture o leite, a aveia e o açúcar numa panela pequena."},
+    {"text": "Cozinhe em fogo baixo, mexendo sempre, até engrossar.", "timer": 300},
+    {"text": "Sirva com canela e banana por cima."}
+  ]},
+{"id": "ovos-cozidos", "title": "Ovos cozidos no ponto", "category": "cafe-da-manha", "prepTimeMinutes": 15, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "4 ovos"}, {"id": "agua", "text": "Água suficiente para cobrir"}, {"id": "sal", "text": "Sal a gosto"}],
+  "steps": [
+    {"text": "Coloque a água para ferver numa panela."},
+    {"text": "Com a água fervendo, abaixe os ovos com uma colher. Para gema mole, conte 6 minutos; para gema dura, 10 minutos.", "timer": 600},
+    {"text": "Passe os ovos para uma tigela com água fria para parar o cozimento.", "timer": 120},
+    {"text": "Descasque e sirva com sal."}
+  ]},
+{"id": "torrada-de-abacate", "title": "Torrada de abacate", "category": "cafe-da-manha", "prepTimeMinutes": 10, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "abacate", "text": "1/2 abacate maduro"}, {"id": "pao", "text": "2 pães franceses ou 2 fatias de pão de forma"}, {"id": "limao", "text": "Suco de 1/2 limão"}, {"id": "sal", "text": "Sal e pimenta a gosto"}, {"id": "ovo", "text": "2 ovos", "optional": true}, {"id": "tomate", "text": "1 tomate picado", "optional": true}],
+  "steps": [
+    {"text": "Toste o pão na frigideira ou na torradeira.", "timer": 180},
+    {"text": "Amasse o abacate com o limão, o sal e a pimenta."},
+    {"text": "Espalhe sobre as torradas e finalize com tomate ou um ovo frito."}
+  ]},
+{"id": "bolinho-de-arroz", "title": "Bolinho de arroz", "category": "lanche", "prepTimeMinutes": 30, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "arroz", "text": "2 xícaras de arroz cozido (pode ser de ontem)"}, {"id": "ovo", "text": "1 ovo"}, {"id": "farinha-trigo", "text": "4 colheres (sopa) de farinha de trigo"}, {"id": "queijo", "text": "1/2 xícara de muçarela ou parmesão ralado"}, {"id": "cheiro-verde", "text": "Cheiro-verde picado", "optional": true}, {"id": "oleo", "text": "Óleo para fritar"}],
+  "steps": [
+    {"text": "Misture o arroz, o ovo, o queijo, o cheiro-verde e a farinha até dar liga. Acerte o sal."},
+    {"text": "Aqueça o óleo e pingue colheradas da massa."},
+    {"text": "Frite até dourar, virando na metade.", "timer": 240},
+    {"text": "Escorra em papel-toalha e sirva quente."}
+  ]},
+{"id": "coxinha-de-frango", "title": "Coxinha de frango", "category": "lanche", "prepTimeMinutes": 90, "servings": 6, "difficulty": "dificil",
+  "ingredients": [{"id": "frango", "text": "500 g de peito de frango"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "farinha-trigo", "text": "2 xícaras de farinha de trigo"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga"}, {"id": "requeijao", "text": "3 colheres (sopa) de requeijão", "optional": true}, {"id": "ovo", "text": "2 ovos batidos para empanar"}, {"id": "farinha-rosca", "text": "1 xícara de farinha de rosca"}, {"id": "oleo", "text": "Óleo para fritar"}],
+  "steps": [
+    {"text": "Cozinhe o frango em 2 xícaras de água com sal. Guarde o caldo.", "timer": 1500},
+    {"text": "Desfie o frango e refogue com a cebola e o alho. Misture o requeijão e reserve."},
+    {"text": "Ferva 2 xícaras do caldo com a manteiga, despeje a farinha de uma vez e mexa até a massa soltar da panela.", "timer": 180},
+    {"text": "Espere a massa amornar e sove até ficar lisa.", "timer": 600},
+    {"text": "Abra porções na mão, recheie, feche no formato de coxinha. Passe no ovo e na farinha de rosca."},
+    {"text": "Frite em óleo quente até dourar.", "timer": 240}
+  ]}
+]
