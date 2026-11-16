@@ -1,0 +1,632 @@
+[
+  {
+    "id": "sal",
+    "name": "Sal",
+    "category": "Básicos",
+    "alwaysHave": true
+  },
+  {
+    "id": "oleo",
+    "name": "Óleo",
+    "category": "Básicos",
+    "alwaysHave": true
+  },
+  {
+    "id": "agua",
+    "name": "Água",
+    "category": "Básicos",
+    "alwaysHave": true
+  },
+  {
+    "id": "pimenta-do-reino",
+    "name": "Pimenta-do-reino",
+    "category": "Básicos",
+    "alwaysHave": true
+  },
+  {
+    "id": "acucar",
+    "name": "Açúcar",
+    "category": "Básicos",
+    "alwaysHave": true
+  },
+  {
+    "id": "alho",
+    "name": "Alho",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "cebola",
+    "name": "Cebola",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "tomate",
+    "name": "Tomate",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "batata",
+    "name": "Batata",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "batata-doce",
+    "name": "Batata-doce",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "cenoura",
+    "name": "Cenoura",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "abobrinha",
+    "name": "Abobrinha",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "berinjela",
+    "name": "Berinjela",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "brocolis",
+    "name": "Brócolis",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "couve-flor",
+    "name": "Couve-flor",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "couve",
+    "name": "Couve",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "alface",
+    "name": "Alface",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "repolho",
+    "name": "Repolho",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "espinafre",
+    "name": "Espinafre",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "pepino",
+    "name": "Pepino",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "pimentao",
+    "name": "Pimentão",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "cheiro-verde",
+    "name": "Cheiro-verde",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "manjericao",
+    "name": "Manjericão",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "gengibre",
+    "name": "Gengibre",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "limao",
+    "name": "Limão",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "laranja",
+    "name": "Laranja",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "maca",
+    "name": "Maçã",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "morango",
+    "name": "Morango",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "abacate",
+    "name": "Abacate",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "mamao",
+    "name": "Mamão",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "maracuja",
+    "name": "Maracujá",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "mandioca",
+    "name": "Mandioca",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "abobora",
+    "name": "Abóbora",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "chuchu",
+    "name": "Chuchu",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "quiabo",
+    "name": "Quiabo",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "vagem",
+    "name": "Vagem",
+    "category": "Hortifruti",
+    "alwaysHave": false
+  },
+  {
+    "id": "ovo",
+    "name": "Ovo",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "frango",
+    "name": "Frango",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "carne-moida",
+    "name": "Carne moída",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "carne-bovina",
+    "name": "Carne bovina (bife ou cubos)",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "carne-seca",
+    "name": "Carne-seca",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "carne-porco",
+    "name": "Carne de porco (lombo ou bisteca)",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "linguica",
+    "name": "Linguiça calabresa",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "bacon",
+    "name": "Bacon",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "presunto",
+    "name": "Presunto",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "salsicha",
+    "name": "Salsicha",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "peixe",
+    "name": "Filé de peixe",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "camarao",
+    "name": "Camarão",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "atum",
+    "name": "Atum em lata",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "sardinha",
+    "name": "Sardinha em lata",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "feijao",
+    "name": "Feijão",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "lentilha",
+    "name": "Lentilha",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "grao-de-bico",
+    "name": "Grão-de-bico",
+    "category": "Proteínas",
+    "alwaysHave": false
+  },
+  {
+    "id": "leite",
+    "name": "Leite",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "manteiga",
+    "name": "Manteiga",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "queijo",
+    "name": "Queijo muçarela",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "parmesao",
+    "name": "Queijo parmesão",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "queijo-minas",
+    "name": "Queijo minas",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "requeijao",
+    "name": "Requeijão",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "creme-de-leite",
+    "name": "Creme de leite",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "leite-condensado",
+    "name": "Leite condensado",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "iogurte",
+    "name": "Iogurte natural",
+    "category": "Laticínios",
+    "alwaysHave": false
+  },
+  {
+    "id": "arroz",
+    "name": "Arroz",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "macarrao",
+    "name": "Macarrão",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "massa-lasanha",
+    "name": "Massa de lasanha",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "farinha-trigo",
+    "name": "Farinha de trigo",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "farinha-mandioca",
+    "name": "Farinha de mandioca",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "farinha-rosca",
+    "name": "Farinha de rosca",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "fuba",
+    "name": "Fubá",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "flocao",
+    "name": "Flocão de milho",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "aveia",
+    "name": "Aveia",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "amido-milho",
+    "name": "Amido de milho",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "polvilho",
+    "name": "Polvilho",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "goma-tapioca",
+    "name": "Goma de tapioca",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "fermento",
+    "name": "Fermento químico",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "pao",
+    "name": "Pão francês",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "pao-de-forma",
+    "name": "Pão de forma",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "molho-tomate",
+    "name": "Molho de tomate",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "milho",
+    "name": "Milho verde em lata",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "ervilha",
+    "name": "Ervilha em lata",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "azeitona",
+    "name": "Azeitona",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "azeite",
+    "name": "Azeite",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "vinagre",
+    "name": "Vinagre",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "shoyu",
+    "name": "Shoyu",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "maionese",
+    "name": "Maionese",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "mostarda",
+    "name": "Mostarda",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "ketchup",
+    "name": "Ketchup",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "batata-palha",
+    "name": "Batata palha",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "chocolate-po",
+    "name": "Chocolate em pó",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "chocolate",
+    "name": "Chocolate em barra",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "coco-ralado",
+    "name": "Coco ralado",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "leite-coco",
+    "name": "Leite de coco",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "amendoim",
+    "name": "Amendoim",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "mel",
+    "name": "Mel",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "biscoito-maisena",
+    "name": "Biscoito maisena",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "milho-pipoca",
+    "name": "Milho de pipoca",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "cafe",
+    "name": "Café em pó",
+    "category": "Despensa",
+    "alwaysHave": false
+  },
+  {
+    "id": "oregano",
+    "name": "Orégano",
+    "category": "Temperos",
+    "alwaysHave": false
+  },
+  {
+    "id": "paprica",
+    "name": "Páprica",
+    "category": "Temperos",
+    "alwaysHave": false
+  },
+  {
+    "id": "canela",
+    "name": "Canela",
+    "category": "Temperos",
+    "alwaysHave": false
+  },
+  {
+    "id": "louro",
+    "name": "Folha de louro",
+    "category": "Temperos",
+    "alwaysHave": false
+  },
+  {
+    "id": "cominho",
+    "name": "Cominho",
+    "category": "Temperos",
+    "alwaysHave": false
+  },
+  {
+    "id": "noz-moscada",
+    "name": "Noz-moscada",
+    "category": "Temperos",
+    "alwaysHave": false
+  },
+  {
+    "id": "acafrao",
+    "name": "Açafrão-da-terra",
+    "category": "Temperos",
+    "alwaysHave": false
+  }
+]

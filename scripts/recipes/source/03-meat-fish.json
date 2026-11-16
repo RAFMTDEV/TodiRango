@@ -1,0 +1,166 @@
+[
+{"id": "carne-moida-refogada", "title": "Carne moída refogada", "category": "prato-principal", "prepTimeMinutes": 25, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "carne-moida", "text": "500 g de carne moída"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "tomate", "text": "2 tomates picados"}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Doure a carne num fio de óleo em fogo alto, soltando os pedaços com a colher.", "timer": 480},
+    {"text": "Junte a cebola e o alho e refogue.", "timer": 180},
+    {"text": "Adicione o tomate, sal e pimenta e cozinhe em fogo baixo até virar um molhinho.", "timer": 600},
+    {"text": "Finalize com cheiro-verde."}
+  ]},
+{"id": "escondidinho-de-carne-seca", "title": "Escondidinho de carne-seca", "category": "prato-principal", "prepTimeMinutes": 90, "servings": 6, "difficulty": "media",
+  "ingredients": [{"id": "carne-seca", "text": "500 g de carne-seca dessalgada"}, {"id": "mandioca", "text": "1 kg de mandioca"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "manteiga", "text": "2 colheres (sopa) de manteiga"}, {"id": "leite", "text": "1/2 xícara de leite"}, {"id": "queijo", "text": "200 g de muçarela ou queijo coalho ralado"}, {"id": "requeijao", "text": "3 colheres (sopa) de requeijão", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe a carne-seca na pressão até desfiar fácil.", "timer": 1800},
+    {"text": "Cozinhe a mandioca em água até ficar bem macia.", "timer": 1500},
+    {"text": "Desfie a carne e refogue com a cebola e o alho."},
+    {"text": "Amasse a mandioca com a manteiga, o leite e o requeijão até virar um purê."},
+    {"text": "Numa travessa, faça uma camada de carne, cubra com o purê e o queijo. Gratine a 200 °C.", "timer": 1200}
+  ]},
+{"id": "bife-acebolado", "title": "Bife acebolado", "category": "prato-principal", "prepTimeMinutes": 20, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "carne-bovina", "text": "4 bifes (contrafilé ou alcatra)"}, {"id": "cebola", "text": "2 cebolas em rodelas"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "vinagre", "text": "1 colher (sopa) de vinagre", "optional": true}],
+  "steps": [
+    {"text": "Tempere os bifes com alho, sal e pimenta."},
+    {"text": "Frite em frigideira bem quente, sem mexer, até dourar. Vire e repita.", "timer": 240},
+    {"text": "Retire os bifes e, na mesma frigideira, doure a cebola com o vinagre e um pouco de água, raspando o fundo.", "timer": 300},
+    {"text": "Volte os bifes por cima da cebola e sirva."}
+  ]},
+{"id": "picadinho-de-carne", "title": "Picadinho de carne com legumes", "category": "prato-principal", "prepTimeMinutes": 60, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "carne-bovina", "text": "600 g de carne em cubos pequenos"}, {"id": "batata", "text": "2 batatas em cubos"}, {"id": "cenoura", "text": "1 cenoura em cubos"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "tomate", "text": "2 tomates picados"}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Doure a carne temperada em partes, em panela bem quente.", "timer": 600},
+    {"text": "Junte a cebola, o alho e o tomate e refogue.", "timer": 240},
+    {"text": "Cubra com água quente e cozinhe tampado até a carne amaciar.", "timer": 1800},
+    {"text": "Adicione a batata e a cenoura e cozinhe até ficarem macias.", "timer": 900},
+    {"text": "Finalize com cheiro-verde e sirva com arroz."}
+  ]},
+{"id": "almondegas-ao-sugo", "title": "Almôndegas ao sugo", "category": "prato-principal", "prepTimeMinutes": 45, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "carne-moida", "text": "500 g de carne moída"}, {"id": "ovo", "text": "1 ovo"}, {"id": "farinha-rosca", "text": "1/2 xícara de farinha de rosca"}, {"id": "cebola", "text": "1 cebola ralada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "molho-tomate", "text": "3 xícaras de molho de tomate"}, {"id": "parmesao", "text": "Parmesão para servir", "optional": true}, {"id": "manjericao", "text": "Manjericão", "optional": true}],
+  "steps": [
+    {"text": "Misture a carne, o ovo, a farinha de rosca, metade da cebola, o alho e sal. Faça bolinhas."},
+    {"text": "Doure as almôndegas numa frigideira com óleo, virando para dourar por igual.", "timer": 480},
+    {"text": "Em uma panela, refogue o resto da cebola e junte o molho de tomate."},
+    {"text": "Coloque as almôndegas no molho e cozinhe tampado em fogo baixo.", "timer": 1200},
+    {"text": "Sirva com manjericão e parmesão, sobre macarrão ou arroz."}
+  ]},
+{"id": "carne-de-panela", "title": "Carne de panela", "category": "prato-principal", "prepTimeMinutes": 80, "servings": 6, "difficulty": "media",
+  "ingredients": [{"id": "carne-bovina", "text": "1 kg de acém ou músculo em pedaços grandes"}, {"id": "cebola", "text": "2 cebolas"}, {"id": "alho", "text": "4 dentes de alho"}, {"id": "tomate", "text": "2 tomates"}, {"id": "batata", "text": "3 batatas"}, {"id": "cenoura", "text": "2 cenouras"}, {"id": "louro", "text": "2 folhas de louro", "optional": true}],
+  "steps": [
+    {"text": "Doure bem a carne temperada na panela de pressão aberta, em partes.", "timer": 900},
+    {"text": "Junte a cebola, o alho, o tomate e o louro e refogue. Cubra com água."},
+    {"text": "Feche a panela e cozinhe depois que pegar pressão.", "timer": 2400},
+    {"text": "Espere a pressão sair, abra, junte a batata e a cenoura e cozinhe com a panela aberta até ficarem macias.", "timer": 900}
+  ]},
+{"id": "hamburguer-caseiro", "title": "Hambúrguer caseiro", "category": "lanche", "prepTimeMinutes": 30, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "carne-moida", "text": "600 g de carne moída (acém ou patinho)"}, {"id": "pao", "text": "4 pães de hambúrguer ou franceses"}, {"id": "queijo", "text": "4 fatias de muçarela"}, {"id": "alface", "text": "Alface", "optional": true}, {"id": "tomate", "text": "1 tomate em rodelas", "optional": true}, {"id": "cebola", "text": "1 cebola em rodelas", "optional": true}, {"id": "maionese", "text": "Maionese ou ketchup", "optional": true}],
+  "steps": [
+    {"text": "Divida a carne em 4 bolas e achate em discos de 1,5 cm, sem amassar demais. Tempere só por fora com sal e pimenta."},
+    {"text": "Grelhe em frigideira bem quente sem mexer.", "timer": 180},
+    {"text": "Vire, coloque o queijo por cima e tampe até derreter.", "timer": 180},
+    {"text": "Toste os pães e monte com alface, tomate, cebola e molho."}
+  ]},
+{"id": "strogonoff-de-carne", "title": "Strogonoff de carne", "category": "prato-principal", "prepTimeMinutes": 35, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "carne-bovina", "text": "600 g de alcatra ou patinho em tiras"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "creme-de-leite", "text": "1 caixa de creme de leite"}, {"id": "ketchup", "text": "3 colheres (sopa) de ketchup"}, {"id": "mostarda", "text": "1 colher (sopa) de mostarda"}, {"id": "batata-palha", "text": "Batata palha", "optional": true}],
+  "steps": [
+    {"text": "Doure a carne em fogo alto, em partes, para não cozinhar no próprio caldo.", "timer": 480},
+    {"text": "Junte a cebola e o alho e refogue.", "timer": 180},
+    {"text": "Adicione o ketchup, a mostarda e 1/2 xícara de água. Cozinhe em fogo baixo.", "timer": 600},
+    {"text": "Desligue e misture o creme de leite. Sirva com arroz e batata palha."}
+  ]},
+{"id": "bisteca-acebolada", "title": "Bisteca de porco acebolada", "category": "prato-principal", "prepTimeMinutes": 35, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "carne-porco", "text": "4 bistecas de porco"}, {"id": "limao", "text": "Suco de 1 limão"}, {"id": "alho", "text": "3 dentes de alho amassados"}, {"id": "cebola", "text": "2 cebolas em rodelas"}],
+  "steps": [
+    {"text": "Tempere as bistecas com limão, alho, sal e pimenta.", "timer": 900},
+    {"text": "Frite em frigideira com pouco óleo, em fogo médio, até dourar e cozinhar por dentro.", "timer": 360},
+    {"text": "Vire e repita do outro lado.", "timer": 360},
+    {"text": "Retire e doure a cebola na mesma frigideira. Sirva por cima das bistecas.", "timer": 300}
+  ]},
+{"id": "lombo-assado", "title": "Lombo de porco assado", "category": "prato-principal", "prepTimeMinutes": 110, "servings": 6, "difficulty": "media",
+  "ingredients": [{"id": "carne-porco", "text": "1 kg de lombo de porco"}, {"id": "alho", "text": "5 dentes de alho"}, {"id": "limao", "text": "Suco de 2 limões"}, {"id": "cebola", "text": "1 cebola"}, {"id": "batata", "text": "4 batatas", "optional": true}, {"id": "mostarda", "text": "2 colheres (sopa) de mostarda", "optional": true}],
+  "steps": [
+    {"text": "Bata o alho, a cebola, o limão, a mostarda e sal no liquidificador e cubra o lombo com essa pasta."},
+    {"text": "Deixe marinando na geladeira (o ideal é de um dia para o outro).", "timer": 3600},
+    {"text": "Coloque numa assadeira com as batatas, cubra com papel-alumínio e asse a 200 °C.", "timer": 2700},
+    {"text": "Retire o papel e asse regando com o caldo da assadeira até dourar.", "timer": 1800}
+  ]},
+{"id": "linguica-acebolada", "title": "Linguiça acebolada", "category": "prato-principal", "prepTimeMinutes": 20, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "linguica", "text": "2 linguiças calabresas em rodelas"}, {"id": "cebola", "text": "2 cebolas em rodelas"}, {"id": "pimentao", "text": "1/2 pimentão em tiras", "optional": true}],
+  "steps": [
+    {"text": "Doure a linguiça numa frigideira sem óleo, em fogo médio.", "timer": 420},
+    {"text": "Junte a cebola e o pimentão e refogue até murcharem e dourarem levemente.", "timer": 300},
+    {"text": "Sirva como petisco ou com arroz e feijão."}
+  ]},
+{"id": "feijoada-simples", "title": "Feijoada simples", "category": "prato-principal", "prepTimeMinutes": 150, "servings": 8, "difficulty": "dificil",
+  "ingredients": [{"id": "feijao", "text": "500 g de feijão-preto"}, {"id": "linguica", "text": "2 linguiças calabresas"}, {"id": "bacon", "text": "200 g de bacon"}, {"id": "carne-seca", "text": "300 g de carne-seca dessalgada", "optional": true}, {"id": "carne-porco", "text": "300 g de lombo ou costelinha", "optional": true}, {"id": "cebola", "text": "1 cebola"}, {"id": "alho", "text": "5 dentes de alho"}, {"id": "louro", "text": "3 folhas de louro"}, {"id": "laranja", "text": "Laranja para servir", "optional": true}],
+  "steps": [
+    {"text": "Deixe o feijão de molho em água (o ideal é de véspera).", "timer": 3600},
+    {"text": "Cozinhe o feijão com o louro e as carnes mais duras (carne-seca e porco) na pressão.", "timer": 2400},
+    {"text": "Doure o bacon e a linguiça em rodelas, junte a cebola e o alho e refogue."},
+    {"text": "Misture o refogado ao feijão e cozinhe em fogo baixo, com a panela aberta, até engrossar.", "timer": 1800},
+    {"text": "Sirva com arroz, couve refogada, farofa e laranja."}
+  ]},
+{"id": "tilapia-grelhada", "title": "Tilápia grelhada com limão", "category": "prato-principal", "prepTimeMinutes": 20, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "peixe", "text": "2 filés de tilápia"}, {"id": "limao", "text": "Suco de 1 limão"}, {"id": "alho", "text": "1 dente de alho amassado"}, {"id": "azeite", "text": "1 colher (sopa) de azeite"}, {"id": "cheiro-verde", "text": "Salsinha picada", "optional": true}],
+  "steps": [
+    {"text": "Tempere os filés com limão, alho, sal e pimenta.", "timer": 600},
+    {"text": "Aqueça bem a frigideira com azeite e coloque os filés. Não mexa para não desmanchar.", "timer": 180},
+    {"text": "Vire com cuidado e grelhe o outro lado.", "timer": 180},
+    {"text": "Finalize com salsinha e sirva com legumes ou salada."}
+  ]},
+{"id": "moqueca-de-peixe", "title": "Moqueca de peixe", "category": "prato-principal", "prepTimeMinutes": 45, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "peixe", "text": "800 g de peixe firme em postas"}, {"id": "limao", "text": "Suco de 1 limão"}, {"id": "leite-coco", "text": "1 vidro de leite de coco"}, {"id": "tomate", "text": "3 tomates em rodelas"}, {"id": "cebola", "text": "2 cebolas em rodelas"}, {"id": "pimentao", "text": "1 pimentão em rodelas"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "cheiro-verde", "text": "Coentro ou cheiro-verde"}],
+  "steps": [
+    {"text": "Tempere o peixe com limão, alho e sal.", "timer": 900},
+    {"text": "Numa panela larga, faça camadas de cebola, tomate e pimentão, coloque o peixe e cubra com mais uma camada de legumes."},
+    {"text": "Despeje o leite de coco, tampe e cozinhe em fogo médio sem mexer.", "timer": 900},
+    {"text": "Finalize com coentro e sirva com arroz e pirão."}
+  ]},
+{"id": "peixe-ao-forno-com-batatas", "title": "Peixe ao forno com batatas", "category": "prato-principal", "prepTimeMinutes": 50, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "peixe", "text": "4 filés de peixe"}, {"id": "batata", "text": "4 batatas em rodelas finas"}, {"id": "tomate", "text": "2 tomates em rodelas"}, {"id": "cebola", "text": "1 cebola em rodelas"}, {"id": "azeite", "text": "4 colheres (sopa) de azeite"}, {"id": "limao", "text": "Suco de 1 limão"}, {"id": "azeitona", "text": "Azeitonas", "optional": true}],
+  "steps": [
+    {"text": "Tempere o peixe com limão, sal e pimenta.", "timer": 600},
+    {"text": "Forre uma assadeira com as batatas, regue com azeite e sal e asse a 200 °C até começarem a amolecer.", "timer": 900},
+    {"text": "Coloque o peixe sobre as batatas e cubra com tomate, cebola e azeitonas."},
+    {"text": "Regue com mais azeite e asse até o peixe ficar opaco e se desfazer em lascas.", "timer": 1200}
+  ]},
+{"id": "bobo-de-camarao", "title": "Bobó de camarão", "category": "prato-principal", "prepTimeMinutes": 60, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "camarao", "text": "500 g de camarão limpo"}, {"id": "mandioca", "text": "500 g de mandioca"}, {"id": "leite-coco", "text": "1 vidro de leite de coco"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "tomate", "text": "2 tomates picados"}, {"id": "pimentao", "text": "1/2 pimentão picado", "optional": true}, {"id": "cheiro-verde", "text": "Coentro ou cheiro-verde"}],
+  "steps": [
+    {"text": "Cozinhe a mandioca até ficar bem macia e bata no liquidificador com o leite de coco e um pouco da água do cozimento.", "timer": 1500},
+    {"text": "Tempere o camarão com sal e alho e refogue rapidamente. Reserve.", "timer": 180},
+    {"text": "Na mesma panela, refogue a cebola, o tomate e o pimentão.", "timer": 300},
+    {"text": "Junte o creme de mandioca e cozinhe mexendo até encorpar.", "timer": 300},
+    {"text": "Volte o camarão, aqueça e finalize com coentro.", "timer": 120}
+  ]},
+{"id": "camarao-alho-e-oleo", "title": "Camarão alho e óleo", "category": "prato-principal", "prepTimeMinutes": 15, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "camarao", "text": "400 g de camarão limpo"}, {"id": "alho", "text": "6 dentes de alho fatiados"}, {"id": "azeite", "text": "4 colheres (sopa) de azeite"}, {"id": "limao", "text": "Suco de 1/2 limão"}, {"id": "cheiro-verde", "text": "Salsinha picada", "optional": true}],
+  "steps": [
+    {"text": "Tempere o camarão com sal e limão."},
+    {"text": "Doure o alho no azeite em fogo baixo, sem deixar queimar.", "timer": 120},
+    {"text": "Aumente o fogo, junte o camarão e salteie até ficar rosado. Não passe do ponto para não endurecer.", "timer": 180},
+    {"text": "Finalize com salsinha."}
+  ]},
+{"id": "torta-de-sardinha", "title": "Torta de sardinha", "category": "prato-principal", "prepTimeMinutes": 55, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "sardinha", "text": "2 latas de sardinha escorrida"}, {"id": "ovo", "text": "3 ovos"}, {"id": "leite", "text": "2 xícaras de leite"}, {"id": "oleo", "text": "1/2 xícara de óleo"}, {"id": "farinha-trigo", "text": "2 xícaras de farinha de trigo"}, {"id": "fermento", "text": "1 colher (sopa) de fermento químico"}, {"id": "tomate", "text": "1 tomate picado"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "azeitona", "text": "Azeitonas picadas", "optional": true}],
+  "steps": [
+    {"text": "Misture a sardinha amassada com o tomate, a cebola e as azeitonas."},
+    {"text": "Bata os ovos, o leite, o óleo, a farinha e uma pitada de sal no liquidificador. Junte o fermento com uma colher."},
+    {"text": "Numa forma untada, coloque metade da massa, o recheio e cubra com o resto."},
+    {"text": "Asse a 180 °C até dourar.", "timer": 2400}
+  ]},
+{"id": "chili-com-feijao", "title": "Chili de carne com feijão", "category": "prato-principal", "prepTimeMinutes": 40, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "carne-moida", "text": "400 g de carne moída"}, {"id": "feijao", "text": "2 xícaras de feijão cozido (de preferência vermelho)"}, {"id": "tomate", "text": "3 tomates picados (ou 1 lata de pelado)"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "pimentao", "text": "1 pimentão picado", "optional": true}, {"id": "cominho", "text": "1 colher (chá) de cominho", "optional": true}, {"id": "paprica", "text": "1 colher (chá) de páprica", "optional": true}],
+  "steps": [
+    {"text": "Doure a carne em fogo alto, soltando bem.", "timer": 420},
+    {"text": "Junte a cebola, o alho, o pimentão e os temperos e refogue.", "timer": 240},
+    {"text": "Adicione o tomate e o feijão com um pouco do caldo. Cozinhe em fogo baixo até engrossar.", "timer": 1200},
+    {"text": "Sirva com arroz ou com pão."}
+  ]},
+{"id": "panqueca-de-carne", "title": "Panqueca de carne moída", "category": "prato-principal", "prepTimeMinutes": 50, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "farinha-trigo", "text": "1 xícara de farinha de trigo"}, {"id": "leite", "text": "1 1/2 xícara de leite"}, {"id": "ovo", "text": "2 ovos"}, {"id": "carne-moida", "text": "400 g de carne moída refogada"}, {"id": "molho-tomate", "text": "2 xícaras de molho de tomate"}, {"id": "queijo", "text": "Muçarela ou parmesão para cobrir"}],
+  "steps": [
+    {"text": "Bata a farinha, o leite, os ovos e uma pitada de sal no liquidificador."},
+    {"text": "Numa frigideira antiaderente untada, faça discos finos, cozinhando cada lado rapidamente.", "timer": 90},
+    {"text": "Recheie cada panqueca com a carne e enrole."},
+    {"text": "Arrume numa travessa, cubra com molho e queijo e leve ao forno a 200 °C para gratinar.", "timer": 900}
+  ]}
+]

@@ -1,0 +1,29 @@
+[
+{"id": "salada-de-frutas", "title": "Salada de frutas", "category": "sobremesa", "prepTimeMinutes": 15, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "banana", "text": "2 bananas"}, {"id": "maca", "text": "1 maçã"}, {"id": "mamao", "text": "1/2 mamão papaia"}, {"id": "laranja", "text": "Suco de 2 laranjas"}, {"id": "morango", "text": "1 caixinha de morangos", "optional": true}, {"id": "leite-condensado", "text": "Leite condensado para servir", "optional": true}],
+  "steps": [
+    {"text": "Corte todas as frutas em cubos pequenos."},
+    {"text": "Misture numa tigela e regue com o suco de laranja, que evita que escureçam."},
+    {"text": "Leve à geladeira e sirva gelada, com leite condensado por cima se quiser.", "timer": 900}
+  ]},
+{"id": "vitamina-de-mamao", "title": "Vitamina de mamão com laranja", "category": "bebida", "prepTimeMinutes": 5, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "mamao", "text": "1/2 mamão papaia"}, {"id": "laranja", "text": "Suco de 2 laranjas"}, {"id": "iogurte", "text": "1 pote de iogurte natural", "optional": true}, {"id": "mel", "text": "1 colher (sopa) de mel", "optional": true}],
+  "steps": [
+    {"text": "Retire as sementes do mamão e pegue a polpa com uma colher."},
+    {"text": "Bata tudo no liquidificador com gelo até ficar cremoso.", "timer": 30},
+    {"text": "Sirva na hora."}
+  ]},
+{"id": "creme-de-morango", "title": "Creme de morango", "category": "sobremesa", "prepTimeMinutes": 15, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "morango", "text": "2 caixinhas de morango"}, {"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "creme-de-leite", "text": "1 caixa de creme de leite"}],
+  "steps": [
+    {"text": "Lave os morangos, separe alguns para decorar e bata o resto no liquidificador com o leite condensado e o creme de leite.", "timer": 60},
+    {"text": "Distribua em taças e decore com os morangos reservados."},
+    {"text": "Leve à geladeira.", "timer": 3600}
+  ]},
+{"id": "parfait-de-iogurte", "title": "Copo de iogurte com frutas e aveia", "category": "cafe-da-manha", "prepTimeMinutes": 5, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "iogurte", "text": "1 pote de iogurte natural"}, {"id": "aveia", "text": "2 colheres (sopa) de aveia"}, {"id": "banana", "text": "1/2 banana em rodelas"}, {"id": "morango", "text": "Morangos picados", "optional": true}, {"id": "mel", "text": "1 colher (sopa) de mel", "optional": true}],
+  "steps": [
+    {"text": "Num copo, faça uma camada de iogurte, uma de aveia e uma de frutas."},
+    {"text": "Repita as camadas e finalize com mel."}
+  ]}
+]

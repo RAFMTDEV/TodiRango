@@ -1,0 +1,162 @@
+[
+{"id": "frango-xadrez", "title": "Frango xadrez", "category": "prato-principal", "prepTimeMinutes": 30, "servings": 3, "difficulty": "media",
+  "ingredients": [{"id": "frango", "text": "500 g de peito de frango em cubos"}, {"id": "pimentao", "text": "1 pimentão (ou 1/2 verde e 1/2 vermelho) em cubos"}, {"id": "cebola", "text": "1 cebola em cubos grandes"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "shoyu", "text": "1/2 xícara de shoyu"}, {"id": "amido-milho", "text": "1 colher (sopa) de amido de milho"}, {"id": "amendoim", "text": "1/2 xícara de amendoim torrado", "optional": true}, {"id": "oleo", "text": "2 colheres (sopa) de óleo"}],
+  "steps": [
+    {"text": "Tempere o frango com metade do shoyu e o alho.", "timer": 600},
+    {"text": "Doure o frango no óleo bem quente, em partes, para não soltar água.", "timer": 360},
+    {"text": "Junte a cebola e o pimentão e refogue rapidamente, deixando crocantes.", "timer": 180},
+    {"text": "Dissolva o amido no resto do shoyu com 1/2 xícara de água, despeje e mexa até engrossar.", "timer": 120},
+    {"text": "Finalize com o amendoim e sirva com arroz."}
+  ]},
+{"id": "strogonoff-de-frango", "title": "Strogonoff de frango", "category": "prato-principal", "prepTimeMinutes": 30, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "600 g de peito de frango em cubos"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "creme-de-leite", "text": "1 caixa de creme de leite"}, {"id": "ketchup", "text": "3 colheres (sopa) de ketchup"}, {"id": "mostarda", "text": "1 colher (sopa) de mostarda"}, {"id": "batata-palha", "text": "Batata palha para servir", "optional": true}],
+  "steps": [
+    {"text": "Tempere o frango com sal e pimenta e doure num fio de óleo.", "timer": 420},
+    {"text": "Junte a cebola e o alho e refogue até murchar.", "timer": 180},
+    {"text": "Adicione o ketchup, a mostarda e 1/2 xícara de água. Cozinhe em fogo baixo.", "timer": 300},
+    {"text": "Desligue o fogo e misture o creme de leite. Sirva com arroz e batata palha."}
+  ]},
+{"id": "frango-assado-com-batatas", "title": "Frango assado com batatas", "category": "prato-principal", "prepTimeMinutes": 75, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "1 kg de coxas e sobrecoxas"}, {"id": "batata", "text": "4 batatas em gomos"}, {"id": "alho", "text": "4 dentes de alho amassados"}, {"id": "limao", "text": "Suco de 1 limão"}, {"id": "paprica", "text": "1 colher (chá) de páprica", "optional": true}, {"id": "azeite", "text": "3 colheres (sopa) de azeite"}],
+  "steps": [
+    {"text": "Tempere o frango com o alho, o limão, a páprica, sal e pimenta.", "timer": 1800},
+    {"text": "Arrume o frango e as batatas numa assadeira, regue com azeite e cubra com papel-alumínio."},
+    {"text": "Asse a 200 °C coberto.", "timer": 1800},
+    {"text": "Retire o papel e asse até dourar bem.", "timer": 1200}
+  ]},
+{"id": "frango-a-parmegiana", "title": "Frango à parmegiana", "category": "prato-principal", "prepTimeMinutes": 50, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "frango", "text": "4 filés de peito de frango"}, {"id": "farinha-trigo", "text": "1/2 xícara de farinha de trigo"}, {"id": "ovo", "text": "2 ovos batidos"}, {"id": "farinha-rosca", "text": "1 xícara de farinha de rosca"}, {"id": "molho-tomate", "text": "2 xícaras de molho de tomate"}, {"id": "queijo", "text": "200 g de muçarela fatiada"}, {"id": "parmesao", "text": "Parmesão ralado", "optional": true}, {"id": "oleo", "text": "Óleo para fritar"}],
+  "steps": [
+    {"text": "Tempere os filés com sal e pimenta. Passe na farinha de trigo, no ovo e na farinha de rosca."},
+    {"text": "Frite em óleo quente até dourar dos dois lados.", "timer": 360},
+    {"text": "Coloque os filés numa travessa, cubra com o molho, a muçarela e o parmesão."},
+    {"text": "Leve ao forno a 200 °C até o queijo derreter e gratinar.", "timer": 900}
+  ]},
+{"id": "galinhada", "title": "Galinhada", "category": "prato-principal", "prepTimeMinutes": 50, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "frango", "text": "800 g de coxas e sobrecoxas em pedaços"}, {"id": "arroz", "text": "2 xícaras de arroz"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "acafrao", "text": "1 colher (chá) de açafrão-da-terra"}, {"id": "tomate", "text": "1 tomate picado", "optional": true}, {"id": "milho", "text": "1/2 lata de milho", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Tempere o frango com sal, alho e açafrão e doure bem numa panela grande com óleo.", "timer": 900},
+    {"text": "Junte a cebola e o tomate e refogue.", "timer": 180},
+    {"text": "Adicione o arroz, mexa para envolver no tempero e cubra com 4 xícaras de água quente."},
+    {"text": "Cozinhe com a panela semitampada até secar.", "timer": 1200},
+    {"text": "Misture o milho e o cheiro-verde e deixe descansar tampado.", "timer": 300}
+  ]},
+{"id": "frango-com-quiabo", "title": "Frango com quiabo", "category": "prato-principal", "prepTimeMinutes": 60, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "frango", "text": "1 kg de frango em pedaços"}, {"id": "quiabo", "text": "400 g de quiabo em rodelas"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "tomate", "text": "2 tomates picados"}, {"id": "limao", "text": "Suco de 1 limão"}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Tempere o frango com limão, alho, sal e pimenta e doure numa panela com óleo.", "timer": 900},
+    {"text": "Junte a cebola e o tomate e refogue. Cubra com água e cozinhe até o frango ficar macio.", "timer": 1500},
+    {"text": "Em outra frigideira, refogue o quiabo em fogo alto, sem tampar, para tirar a baba.", "timer": 600},
+    {"text": "Misture o quiabo ao frango, cozinhe mais um pouco e finalize com cheiro-verde.", "timer": 300}
+  ]},
+{"id": "fricasse-de-frango", "title": "Fricassê de frango", "category": "prato-principal", "prepTimeMinutes": 45, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "500 g de frango cozido e desfiado"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "milho", "text": "1 lata de milho"}, {"id": "creme-de-leite", "text": "1 caixa de creme de leite"}, {"id": "requeijao", "text": "1/2 copo de requeijão"}, {"id": "queijo", "text": "150 g de muçarela"}, {"id": "batata-palha", "text": "Batata palha para cobrir", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola, junte o frango e tempere com sal.", "timer": 300},
+    {"text": "Bata o milho com o creme de leite e o requeijão no liquidificador e misture ao frango."},
+    {"text": "Coloque numa travessa, cubra com a muçarela e leve ao forno a 200 °C.", "timer": 1200},
+    {"text": "Na hora de servir, cubra com batata palha."}
+  ]},
+{"id": "frango-grelhado-com-limao", "title": "Frango grelhado com limão", "category": "prato-principal", "prepTimeMinutes": 25, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "2 filés de peito de frango"}, {"id": "limao", "text": "Suco de 1 limão"}, {"id": "alho", "text": "2 dentes de alho amassados"}, {"id": "azeite", "text": "1 colher (sopa) de azeite"}, {"id": "oregano", "text": "Orégano a gosto", "optional": true}],
+  "steps": [
+    {"text": "Tempere os filés com limão, alho, orégano, sal e pimenta.", "timer": 900},
+    {"text": "Aqueça bem uma frigideira com o azeite e coloque os filés sem mexer.", "timer": 300},
+    {"text": "Vire e grelhe o outro lado até ficar dourado e cozido por dentro.", "timer": 300}
+  ]},
+{"id": "torta-de-frango-de-liquidificador", "title": "Torta de frango de liquidificador", "category": "prato-principal", "prepTimeMinutes": 60, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "3 ovos"}, {"id": "leite", "text": "2 xícaras de leite"}, {"id": "oleo", "text": "1/2 xícara de óleo"}, {"id": "farinha-trigo", "text": "2 xícaras de farinha de trigo"}, {"id": "fermento", "text": "1 colher (sopa) de fermento químico"}, {"id": "frango", "text": "2 xícaras de frango cozido e desfiado"}, {"id": "tomate", "text": "1 tomate picado"}, {"id": "milho", "text": "1/2 lata de milho", "optional": true}, {"id": "queijo", "text": "Muçarela ralada", "optional": true}],
+  "steps": [
+    {"text": "Refogue o frango com o tomate e o milho. Tempere e reserve."},
+    {"text": "Bata no liquidificador os ovos, o leite, o óleo, a farinha e uma pitada de sal. Misture o fermento com uma colher."},
+    {"text": "Numa forma untada, coloque metade da massa, o recheio e cubra com o resto da massa e o queijo."},
+    {"text": "Asse a 180 °C até dourar e o palito sair limpo.", "timer": 2400}
+  ]},
+{"id": "frango-com-leite-de-coco", "title": "Frango com açafrão e leite de coco", "category": "prato-principal", "prepTimeMinutes": 35, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "600 g de peito de frango em cubos"}, {"id": "leite-coco", "text": "1 vidro de leite de coco"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "acafrao", "text": "1 colher (chá) de açafrão-da-terra"}, {"id": "gengibre", "text": "1 colher (chá) de gengibre ralado", "optional": true}, {"id": "tomate", "text": "1 tomate picado", "optional": true}],
+  "steps": [
+    {"text": "Doure o frango temperado com sal num fio de óleo.", "timer": 420},
+    {"text": "Junte a cebola, o alho, o gengibre e o açafrão e refogue.", "timer": 180},
+    {"text": "Adicione o tomate e o leite de coco e cozinhe em fogo baixo até encorpar.", "timer": 600},
+    {"text": "Sirva com arroz branco."}
+  ]},
+{"id": "salpicao-de-frango", "title": "Salpicão de frango", "category": "salada", "prepTimeMinutes": 30, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "500 g de frango cozido e desfiado"}, {"id": "cenoura", "text": "2 cenouras raladas"}, {"id": "milho", "text": "1 lata de milho"}, {"id": "ervilha", "text": "1 lata de ervilha", "optional": true}, {"id": "maionese", "text": "1 xícara de maionese"}, {"id": "maca", "text": "1 maçã em cubos", "optional": true}, {"id": "batata-palha", "text": "Batata palha para cobrir"}],
+  "steps": [
+    {"text": "Misture o frango, a cenoura, o milho, a ervilha e a maçã."},
+    {"text": "Junte a maionese, acerte o sal e misture bem."},
+    {"text": "Leve à geladeira.", "timer": 1200},
+    {"text": "Cubra com batata palha só na hora de servir, para não murchar."}
+  ]},
+{"id": "nuggets-caseiros", "title": "Nuggets caseiros", "category": "lanche", "prepTimeMinutes": 40, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "frango", "text": "500 g de peito de frango"}, {"id": "alho", "text": "1 dente de alho"}, {"id": "cebola", "text": "1/2 cebola"}, {"id": "ovo", "text": "2 ovos batidos"}, {"id": "farinha-trigo", "text": "1/2 xícara de farinha de trigo"}, {"id": "farinha-rosca", "text": "1 xícara de farinha de rosca"}, {"id": "paprica", "text": "1 colher (chá) de páprica", "optional": true}],
+  "steps": [
+    {"text": "Triture o frango com o alho, a cebola, a páprica e sal no processador até virar uma pasta."},
+    {"text": "Modele os nuggets com as mãos úmidas. Passe na farinha de trigo, no ovo e na farinha de rosca."},
+    {"text": "Leve ao congelador para firmar.", "timer": 900},
+    {"text": "Asse a 200 °C virando na metade, ou frite em óleo quente até dourar.", "timer": 1200}
+  ]},
+{"id": "frango-desfiado-refogado", "title": "Frango desfiado refogado", "category": "prato-principal", "prepTimeMinutes": 40, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "500 g de peito de frango"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "tomate", "text": "2 tomates picados"}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe o frango em água com sal até ficar macio.", "timer": 1500},
+    {"text": "Escorra, espere amornar e desfie com dois garfos."},
+    {"text": "Refogue a cebola e o alho, junte o tomate e o frango e cozinhe até secar o caldo.", "timer": 480},
+    {"text": "Finalize com cheiro-verde. Serve como prato ou recheio de tortas e sanduíches."}
+  ]},
+{"id": "frango-com-batata-doce", "title": "Frango com batata-doce assada", "category": "prato-principal", "prepTimeMinutes": 45, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "2 filés de peito de frango"}, {"id": "batata-doce", "text": "2 batatas-doces em rodelas"}, {"id": "azeite", "text": "2 colheres (sopa) de azeite"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "paprica", "text": "Páprica a gosto", "optional": true}, {"id": "brocolis", "text": "Brócolis no vapor para acompanhar", "optional": true}],
+  "steps": [
+    {"text": "Espalhe a batata-doce numa assadeira, regue com azeite, sal e páprica."},
+    {"text": "Asse a 200 °C, virando na metade.", "timer": 1800},
+    {"text": "Enquanto isso, tempere e grelhe o frango numa frigideira quente.", "timer": 600},
+    {"text": "Sirva o frango com a batata-doce e o brócolis."}
+  ]},
+{"id": "fritada-de-legumes", "title": "Fritada de legumes", "category": "prato-principal", "prepTimeMinutes": 25, "servings": 3, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "5 ovos"}, {"id": "abobrinha", "text": "1 abobrinha ralada"}, {"id": "cebola", "text": "1/2 cebola picada"}, {"id": "tomate", "text": "1 tomate picado"}, {"id": "queijo", "text": "1/2 xícara de muçarela ou parmesão", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola e a abobrinha numa frigideira que possa ir ao forno.", "timer": 300},
+    {"text": "Bata os ovos com sal, o queijo e o cheiro-verde e despeje sobre os legumes com o tomate."},
+    {"text": "Cozinhe tampado em fogo baixo até firmar as bordas.", "timer": 480},
+    {"text": "Termine no forno a 200 °C até dourar por cima, ou vire com a ajuda de um prato.", "timer": 420}
+  ]},
+{"id": "ovos-no-molho-de-tomate", "title": "Ovos no molho de tomate", "category": "prato-principal", "prepTimeMinutes": 25, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "4 ovos"}, {"id": "tomate", "text": "4 tomates picados (ou 1 lata de tomate pelado)"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "pimentao", "text": "1/2 pimentão picado", "optional": true}, {"id": "paprica", "text": "1 colher (chá) de páprica", "optional": true}, {"id": "pao", "text": "Pão para servir", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola, o alho e o pimentão no azeite ou óleo.", "timer": 240},
+    {"text": "Junte o tomate, a páprica e sal. Cozinhe até virar um molho grosso.", "timer": 600},
+    {"text": "Faça 4 covas no molho e quebre um ovo em cada uma. Tampe e cozinhe até as claras firmarem.", "timer": 360},
+    {"text": "Sirva direto da frigideira, com pão."}
+  ]},
+{"id": "arroz-frito-com-ovo", "title": "Arroz frito com ovo", "category": "prato-principal", "prepTimeMinutes": 15, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "arroz", "text": "2 xícaras de arroz cozido frio"}, {"id": "ovo", "text": "2 ovos"}, {"id": "cenoura", "text": "1 cenoura em cubinhos"}, {"id": "shoyu", "text": "2 colheres (sopa) de shoyu"}, {"id": "ervilha", "text": "1/2 xícara de ervilha", "optional": true}, {"id": "cheiro-verde", "text": "Cebolinha picada", "optional": true}, {"id": "presunto", "text": "Presunto em cubos", "optional": true}],
+  "steps": [
+    {"text": "Mexa os ovos numa frigideira grande com óleo, quebrando em pedaços, e reserve.", "timer": 120},
+    {"text": "Na mesma frigideira, refogue a cenoura, a ervilha e o presunto em fogo alto.", "timer": 240},
+    {"text": "Junte o arroz e o shoyu e salteie até o arroz ficar soltinho e quente.", "timer": 240},
+    {"text": "Volte os ovos, misture e finalize com cebolinha."}
+  ]},
+{"id": "coxas-assadas-com-paprica", "title": "Coxas de frango assadas com páprica", "category": "prato-principal", "prepTimeMinutes": 60, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "8 coxas de frango"}, {"id": "paprica", "text": "1 colher (sopa) de páprica"}, {"id": "alho", "text": "3 dentes de alho amassados"}, {"id": "mel", "text": "1 colher (sopa) de mel", "optional": true}, {"id": "oleo", "text": "2 colheres (sopa) de óleo"}],
+  "steps": [
+    {"text": "Misture a páprica, o alho, o mel, o óleo, sal e pimenta e esfregue nas coxas.", "timer": 900},
+    {"text": "Arrume numa assadeira com a pele para cima."},
+    {"text": "Asse a 200 °C, virando uma vez, até a pele ficar bem dourada.", "timer": 2700}
+  ]},
+{"id": "frango-empanado", "title": "Frango empanado à milanesa", "category": "prato-principal", "prepTimeMinutes": 35, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "4 filés finos de peito de frango"}, {"id": "limao", "text": "Suco de 1/2 limão"}, {"id": "farinha-trigo", "text": "1/2 xícara de farinha de trigo"}, {"id": "ovo", "text": "2 ovos batidos"}, {"id": "farinha-rosca", "text": "1 xícara de farinha de rosca"}, {"id": "oleo", "text": "Óleo para fritar"}],
+  "steps": [
+    {"text": "Tempere os filés com limão, sal e pimenta.", "timer": 600},
+    {"text": "Passe na farinha de trigo, depois no ovo e por último na farinha de rosca, apertando bem."},
+    {"text": "Frite em óleo quente até dourar, virando na metade.", "timer": 360},
+    {"text": "Escorra em papel-toalha e sirva com limão."}
+  ]},
+{"id": "risoto-de-frango", "title": "Risoto de frango", "category": "prato-principal", "prepTimeMinutes": 40, "servings": 3, "difficulty": "media",
+  "ingredients": [{"id": "arroz", "text": "1 1/2 xícara de arroz (arbóreo, se tiver)"}, {"id": "frango", "text": "300 g de frango cozido e desfiado"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "manteiga", "text": "2 colheres (sopa) de manteiga"}, {"id": "parmesao", "text": "1/2 xícara de parmesão ralado"}, {"id": "agua", "text": "1 litro de água quente (ou caldo do frango)"}, {"id": "ervilha", "text": "1/2 xícara de ervilha", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola em metade da manteiga, junte o arroz e mexa por 1 minuto.", "timer": 60},
+    {"text": "Vá adicionando a água quente uma concha por vez, mexendo sempre e esperando secar antes da próxima.", "timer": 1080},
+    {"text": "Quando o arroz estiver quase macio, junte o frango e a ervilha.", "timer": 120},
+    {"text": "Desligue, misture o resto da manteiga e o parmesão até ficar cremoso."}
+  ]}
+]

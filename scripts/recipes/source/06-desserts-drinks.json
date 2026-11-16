@@ -1,0 +1,153 @@
+[
+{"id": "brigadeiro", "title": "Brigadeiro", "category": "sobremesa", "prepTimeMinutes": 30, "servings": 20, "difficulty": "facil",
+  "ingredients": [{"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "chocolate-po", "text": "2 colheres (sopa) de chocolate em pó"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga"}, {"id": "chocolate", "text": "Chocolate granulado para enrolar", "optional": true}],
+  "steps": [
+    {"text": "Misture o leite condensado, o chocolate e a manteiga numa panela."},
+    {"text": "Cozinhe em fogo baixo, mexendo sem parar, até a massa desgrudar do fundo da panela.", "timer": 600},
+    {"text": "Passe para um prato untado e espere esfriar.", "timer": 1200},
+    {"text": "Unte as mãos, enrole bolinhas e passe no granulado."}
+  ]},
+{"id": "beijinho", "title": "Beijinho", "category": "sobremesa", "prepTimeMinutes": 30, "servings": 20, "difficulty": "facil",
+  "ingredients": [{"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "coco-ralado", "text": "1/2 xícara de coco ralado, mais um pouco para enrolar"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga"}],
+  "steps": [
+    {"text": "Misture o leite condensado, o coco e a manteiga numa panela."},
+    {"text": "Cozinhe em fogo baixo, mexendo sempre, até desgrudar do fundo.", "timer": 600},
+    {"text": "Espere esfriar num prato untado.", "timer": 1200},
+    {"text": "Enrole bolinhas e passe no coco ralado."}
+  ]},
+{"id": "pudim-de-leite-condensado", "title": "Pudim de leite condensado", "category": "sobremesa", "prepTimeMinutes": 100, "servings": 8, "difficulty": "media",
+  "ingredients": [{"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "leite", "text": "A mesma medida da lata de leite"}, {"id": "ovo", "text": "3 ovos"}, {"id": "acucar", "text": "1 xícara de açúcar para a calda"}],
+  "steps": [
+    {"text": "Derreta o açúcar numa forma de pudim direto no fogo até virar caramelo. Espalhe pelas laterais com cuidado.", "timer": 300},
+    {"text": "Bata o leite condensado, o leite e os ovos no liquidificador e despeje na forma."},
+    {"text": "Cubra com papel-alumínio e asse em banho-maria a 180 °C.", "timer": 3600},
+    {"text": "Espere esfriar e leve à geladeira antes de desenformar.", "timer": 3600}
+  ]},
+{"id": "bolo-de-cenoura", "title": "Bolo de cenoura com cobertura de chocolate", "category": "sobremesa", "prepTimeMinutes": 60, "servings": 12, "difficulty": "facil",
+  "ingredients": [{"id": "cenoura", "text": "3 cenouras médias"}, {"id": "ovo", "text": "3 ovos"}, {"id": "oleo", "text": "3/4 de xícara de óleo"}, {"id": "acucar", "text": "2 xícaras de açúcar"}, {"id": "farinha-trigo", "text": "2 1/2 xícaras de farinha de trigo"}, {"id": "fermento", "text": "1 colher (sopa) de fermento químico"}, {"id": "chocolate-po", "text": "4 colheres (sopa) de chocolate em pó (cobertura)"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga (cobertura)"}, {"id": "leite", "text": "3 colheres (sopa) de leite (cobertura)"}],
+  "steps": [
+    {"text": "Bata as cenouras picadas, os ovos e o óleo no liquidificador. Junte 1 1/2 xícara do açúcar e bata mais."},
+    {"text": "Passe para uma tigela, misture a farinha e por último o fermento."},
+    {"text": "Asse numa forma untada a 180 °C até o palito sair limpo.", "timer": 2400},
+    {"text": "Para a cobertura, leve ao fogo o chocolate, o resto do açúcar, a manteiga e o leite, mexendo até engrossar um pouco. Espalhe sobre o bolo.", "timer": 300}
+  ]},
+{"id": "bolo-de-chocolate", "title": "Bolo de chocolate simples", "category": "sobremesa", "prepTimeMinutes": 55, "servings": 12, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "3 ovos"}, {"id": "acucar", "text": "1 1/2 xícara de açúcar"}, {"id": "oleo", "text": "1/2 xícara de óleo"}, {"id": "leite", "text": "1 xícara de leite"}, {"id": "chocolate-po", "text": "1 xícara de chocolate em pó"}, {"id": "farinha-trigo", "text": "2 xícaras de farinha de trigo"}, {"id": "fermento", "text": "1 colher (sopa) de fermento químico"}],
+  "steps": [
+    {"text": "Bata os ovos com o açúcar até clarear. Junte o óleo e o leite."},
+    {"text": "Misture o chocolate e a farinha peneirados, e por último o fermento."},
+    {"text": "Asse numa forma untada a 180 °C até o palito sair limpo.", "timer": 2100}
+  ]},
+{"id": "bolo-de-fuba", "title": "Bolo de fubá", "category": "sobremesa", "prepTimeMinutes": 55, "servings": 12, "difficulty": "facil",
+  "ingredients": [{"id": "fuba", "text": "2 xícaras de fubá"}, {"id": "farinha-trigo", "text": "1 xícara de farinha de trigo"}, {"id": "acucar", "text": "2 xícaras de açúcar"}, {"id": "ovo", "text": "3 ovos"}, {"id": "leite", "text": "1 1/2 xícara de leite"}, {"id": "oleo", "text": "1/2 xícara de óleo"}, {"id": "fermento", "text": "1 colher (sopa) de fermento químico"}, {"id": "queijo-minas", "text": "1/2 xícara de queijo ralado", "optional": true}],
+  "steps": [
+    {"text": "Bata os ovos, o leite, o óleo e o açúcar no liquidificador."},
+    {"text": "Junte o fubá e a farinha e bata até ficar liso. Misture o queijo e o fermento com uma colher."},
+    {"text": "Asse numa forma untada e enfarinhada a 180 °C até dourar.", "timer": 2400}
+  ]},
+{"id": "bolo-de-banana", "title": "Bolo de banana com canela", "category": "sobremesa", "prepTimeMinutes": 60, "servings": 10, "difficulty": "facil",
+  "ingredients": [{"id": "banana", "text": "4 bananas maduras"}, {"id": "ovo", "text": "3 ovos"}, {"id": "acucar", "text": "1 xícara de açúcar"}, {"id": "oleo", "text": "1/2 xícara de óleo"}, {"id": "farinha-trigo", "text": "1 1/2 xícara de farinha de trigo (ou metade aveia)"}, {"id": "fermento", "text": "1 colher (sopa) de fermento químico"}, {"id": "canela", "text": "1 colher (chá) de canela"}],
+  "steps": [
+    {"text": "Bata 3 bananas, os ovos, o açúcar e o óleo no liquidificador."},
+    {"text": "Misture a farinha, a canela e por último o fermento."},
+    {"text": "Coloque numa forma untada e cubra com a banana restante em rodelas e um pouco de açúcar com canela."},
+    {"text": "Asse a 180 °C até o palito sair limpo.", "timer": 2400}
+  ]},
+{"id": "mousse-de-maracuja", "title": "Mousse de maracujá", "category": "sobremesa", "prepTimeMinutes": 15, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "creme-de-leite", "text": "1 caixa de creme de leite"}, {"id": "maracuja", "text": "Polpa de 3 maracujás (ou 1/2 xícara de suco concentrado)"}],
+  "steps": [
+    {"text": "Bata o leite condensado, o creme de leite e o suco de maracujá coado no liquidificador.", "timer": 180},
+    {"text": "Despeje em taças e decore com sementes de maracujá."},
+    {"text": "Leve à geladeira até firmar.", "timer": 7200}
+  ]},
+{"id": "pave-de-chocolate", "title": "Pavê de chocolate", "category": "sobremesa", "prepTimeMinutes": 40, "servings": 8, "difficulty": "facil",
+  "ingredients": [{"id": "biscoito-maisena", "text": "1 pacote de biscoito maisena"}, {"id": "leite", "text": "2 xícaras de leite, mais um pouco para molhar os biscoitos"}, {"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "amido-milho", "text": "2 colheres (sopa) de amido de milho"}, {"id": "ovo", "text": "2 gemas"}, {"id": "chocolate-po", "text": "3 colheres (sopa) de chocolate em pó"}, {"id": "creme-de-leite", "text": "1 caixa de creme de leite"}],
+  "steps": [
+    {"text": "Leve ao fogo o leite, o leite condensado, o amido e as gemas, mexendo até engrossar. Separe metade.", "timer": 480},
+    {"text": "Na outra metade, misture o chocolate em pó. Junte metade do creme de leite em cada creme."},
+    {"text": "Num refratário, alterne camadas de biscoito molhado no leite, creme branco e creme de chocolate."},
+    {"text": "Leve à geladeira.", "timer": 10800}
+  ]},
+{"id": "rabanada", "title": "Rabanada", "category": "sobremesa", "prepTimeMinutes": 25, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "pao", "text": "4 pães franceses amanhecidos em fatias grossas"}, {"id": "leite", "text": "1 1/2 xícara de leite"}, {"id": "leite-condensado", "text": "1/2 lata de leite condensado", "optional": true}, {"id": "ovo", "text": "2 ovos batidos"}, {"id": "acucar", "text": "Açúcar para empanar"}, {"id": "canela", "text": "Canela para empanar"}, {"id": "oleo", "text": "Óleo para fritar"}],
+  "steps": [
+    {"text": "Misture o leite com o leite condensado. Passe as fatias rapidamente na mistura e depois no ovo."},
+    {"text": "Frite em óleo quente até dourar dos dois lados.", "timer": 180},
+    {"text": "Escorra e passe na mistura de açúcar com canela."}
+  ]},
+{"id": "brownie", "title": "Brownie", "category": "sobremesa", "prepTimeMinutes": 45, "servings": 12, "difficulty": "media",
+  "ingredients": [{"id": "chocolate", "text": "200 g de chocolate meio amargo"}, {"id": "manteiga", "text": "150 g de manteiga"}, {"id": "acucar", "text": "1 xícara de açúcar"}, {"id": "ovo", "text": "3 ovos"}, {"id": "farinha-trigo", "text": "3/4 de xícara de farinha de trigo"}, {"id": "chocolate-po", "text": "2 colheres (sopa) de chocolate em pó", "optional": true}],
+  "steps": [
+    {"text": "Derreta o chocolate com a manteiga em banho-maria ou no micro-ondas, de 30 em 30 segundos."},
+    {"text": "Bata os ovos com o açúcar só até misturar e junte o chocolate derretido."},
+    {"text": "Misture a farinha e o chocolate em pó delicadamente, sem bater."},
+    {"text": "Asse numa forma forrada com papel-manteiga a 180 °C. O meio deve ficar úmido.", "timer": 1500},
+    {"text": "Espere esfriar antes de cortar.", "timer": 1200}
+  ]},
+{"id": "bolo-de-caneca", "title": "Bolo de caneca de chocolate", "category": "sobremesa", "prepTimeMinutes": 5, "servings": 1, "difficulty": "facil",
+  "ingredients": [{"id": "ovo", "text": "1 ovo"}, {"id": "leite", "text": "3 colheres (sopa) de leite"}, {"id": "oleo", "text": "2 colheres (sopa) de óleo"}, {"id": "acucar", "text": "3 colheres (sopa) de açúcar"}, {"id": "chocolate-po", "text": "2 colheres (sopa) de chocolate em pó"}, {"id": "farinha-trigo", "text": "4 colheres (sopa) de farinha de trigo"}, {"id": "fermento", "text": "1/2 colher (chá) de fermento químico"}],
+  "steps": [
+    {"text": "Numa caneca grande, bata o ovo com um garfo e junte o leite, o óleo e o açúcar."},
+    {"text": "Misture o chocolate e a farinha e, por último, o fermento."},
+    {"text": "Leve ao micro-ondas em potência alta.", "timer": 120},
+    {"text": "Espere 1 minuto antes de comer, porque sai muito quente.", "timer": 60}
+  ]},
+{"id": "banana-caramelizada", "title": "Banana caramelizada com canela", "category": "sobremesa", "prepTimeMinutes": 10, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "banana", "text": "2 bananas cortadas ao meio no comprido"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga"}, {"id": "acucar", "text": "2 colheres (sopa) de açúcar"}, {"id": "canela", "text": "Canela a gosto"}],
+  "steps": [
+    {"text": "Derreta a manteiga com o açúcar numa frigideira em fogo médio."},
+    {"text": "Coloque as bananas com o lado cortado para baixo e deixe caramelizar.", "timer": 120},
+    {"text": "Vire, polvilhe canela e deixe mais um pouco.", "timer": 90},
+    {"text": "Sirva puras ou com sorvete."}
+  ]},
+{"id": "arroz-doce", "title": "Arroz-doce", "category": "sobremesa", "prepTimeMinutes": 45, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "arroz", "text": "1 xícara de arroz"}, {"id": "leite", "text": "1 litro de leite"}, {"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "canela", "text": "Canela em pau e em pó"}, {"id": "agua", "text": "2 xícaras de água"}],
+  "steps": [
+    {"text": "Cozinhe o arroz na água com a canela em pau até a água secar.", "timer": 900},
+    {"text": "Junte o leite e cozinhe em fogo baixo, mexendo de vez em quando, até o arroz ficar bem macio.", "timer": 1200},
+    {"text": "Adicione o leite condensado e cozinhe até ficar cremoso.", "timer": 300},
+    {"text": "Sirva quente ou gelado, polvilhado com canela."}
+  ]},
+{"id": "cocada", "title": "Cocada cremosa", "category": "sobremesa", "prepTimeMinutes": 30, "servings": 10, "difficulty": "facil",
+  "ingredients": [{"id": "coco-ralado", "text": "200 g de coco ralado"}, {"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "leite", "text": "1/2 xícara de leite"}, {"id": "acucar", "text": "1/2 xícara de açúcar"}],
+  "steps": [
+    {"text": "Misture todos os ingredientes numa panela."},
+    {"text": "Cozinhe em fogo baixo, mexendo sempre, até começar a soltar do fundo, mas ainda cremosa.", "timer": 900},
+    {"text": "Coloque às colheradas num tabuleiro untado e espere esfriar.", "timer": 1800}
+  ]},
+{"id": "torta-de-limao", "title": "Torta de limão", "category": "sobremesa", "prepTimeMinutes": 50, "servings": 8, "difficulty": "media",
+  "ingredients": [{"id": "biscoito-maisena", "text": "200 g de biscoito maisena triturado"}, {"id": "manteiga", "text": "100 g de manteiga derretida"}, {"id": "leite-condensado", "text": "1 lata de leite condensado"}, {"id": "creme-de-leite", "text": "1 caixa de creme de leite"}, {"id": "limao", "text": "Suco de 4 limões e raspas para decorar"}],
+  "steps": [
+    {"text": "Misture o biscoito com a manteiga e forre o fundo e as laterais de uma forma de fundo removível."},
+    {"text": "Asse a base a 180 °C.", "timer": 600},
+    {"text": "Bata o leite condensado, o creme de leite e o suco de limão até engrossar. Despeje sobre a base fria."},
+    {"text": "Leve à geladeira até firmar e decore com raspas de limão.", "timer": 7200}
+  ]},
+{"id": "limonada", "title": "Limonada suíça", "category": "bebida", "prepTimeMinutes": 10, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "limao", "text": "3 limões taiti"}, {"id": "agua", "text": "1 litro de água gelada"}, {"id": "acucar", "text": "6 colheres (sopa) de açúcar"}, {"id": "leite-condensado", "text": "1/2 lata de leite condensado", "optional": true}],
+  "steps": [
+    {"text": "Lave bem os limões, corte as pontas e corte em 4."},
+    {"text": "Bata no liquidificador com a água e o açúcar por poucos segundos, para não amargar.", "timer": 15},
+    {"text": "Coe, junte o leite condensado se quiser e sirva com gelo."}
+  ]},
+{"id": "suco-laranja-cenoura", "title": "Suco de laranja com cenoura", "category": "bebida", "prepTimeMinutes": 10, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "laranja", "text": "4 laranjas"}, {"id": "cenoura", "text": "1 cenoura pequena"}, {"id": "gengibre", "text": "1 rodela de gengibre", "optional": true}],
+  "steps": [
+    {"text": "Esprema as laranjas."},
+    {"text": "Bata o suco com a cenoura picada e o gengibre no liquidificador."},
+    {"text": "Coe se preferir e sirva gelado."}
+  ]},
+{"id": "chocolate-quente", "title": "Chocolate quente cremoso", "category": "bebida", "prepTimeMinutes": 10, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "leite", "text": "2 xícaras de leite"}, {"id": "chocolate-po", "text": "3 colheres (sopa) de chocolate em pó"}, {"id": "acucar", "text": "2 colheres (sopa) de açúcar"}, {"id": "amido-milho", "text": "1 colher (sopa) de amido de milho"}, {"id": "canela", "text": "Canela", "optional": true}, {"id": "creme-de-leite", "text": "2 colheres (sopa) de creme de leite", "optional": true}],
+  "steps": [
+    {"text": "Dissolva o amido em um pouco de leite frio."},
+    {"text": "Leve o resto do leite ao fogo com o chocolate, o açúcar e o amido dissolvido, mexendo sempre até engrossar.", "timer": 300},
+    {"text": "Desligue, misture o creme de leite e sirva com canela."}
+  ]},
+{"id": "cafe-gelado", "title": "Café gelado cremoso", "category": "bebida", "prepTimeMinutes": 5, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "cafe", "text": "1 xícara de café forte frio"}, {"id": "leite", "text": "1 xícara de leite gelado"}, {"id": "leite-condensado", "text": "3 colheres (sopa) de leite condensado"}, {"id": "chocolate-po", "text": "1 colher (sopa) de chocolate em pó", "optional": true}],
+  "steps": [
+    {"text": "Bata tudo no liquidificador com alguns cubos de gelo até espumar.", "timer": 30},
+    {"text": "Sirva em copos altos com mais gelo."}
+  ]}
+]

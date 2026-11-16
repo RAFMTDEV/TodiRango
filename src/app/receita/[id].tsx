@@ -86,8 +86,9 @@ export default function ReceitaScreen() {
       <Text style={{ fontSize: 18, fontWeight: "700" }}>Ingredientes</Text>
 
       {recipe.ingredients.map((i) => (
-        <Text key={i.name}>
-          • {i.quantity} {i.name}
+        <Text key={i.id}>
+          • {i.text}
+          {i.optional ? " (opcional)" : ""}
         </Text>
       ))}
 
