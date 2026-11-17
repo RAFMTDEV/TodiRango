@@ -1,0 +1,154 @@
+[
+{"id": "caldo-verde", "title": "Caldo verde", "category": "sopa", "prepTimeMinutes": 45, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "batata", "text": "5 batatas"}, {"id": "couve", "text": "1 maço de couve cortada bem fina"}, {"id": "linguica", "text": "1 linguiça calabresa em rodelas"}, {"id": "cebola", "text": "1 cebola"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "azeite", "text": "Azeite para finalizar", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe as batatas com a cebola e o alho em 1,5 litro de água com sal até desmancharem.", "timer": 1200},
+    {"text": "Bata tudo no liquidificador (com cuidado, está quente) e volte para a panela."},
+    {"text": "Doure a linguiça numa frigideira e junte ao creme.", "timer": 360},
+    {"text": "Acrescente a couve, ferva só para murchar e finalize com azeite.", "timer": 180}
+  ]},
+{"id": "sopa-de-legumes", "title": "Sopa de legumes", "category": "sopa", "prepTimeMinutes": 40, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "batata", "text": "2 batatas em cubos"}, {"id": "cenoura", "text": "2 cenouras em cubos"}, {"id": "abobrinha", "text": "1 abobrinha em cubos"}, {"id": "chuchu", "text": "1 chuchu em cubos", "optional": true}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "tomate", "text": "1 tomate picado"}, {"id": "macarrao", "text": "1/2 xícara de macarrão pequeno", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola, o alho e o tomate.", "timer": 240},
+    {"text": "Junte a batata, a cenoura e o chuchu, cubra com 1,5 litro de água quente e sal.", "timer": 900},
+    {"text": "Adicione a abobrinha e o macarrão e cozinhe até tudo ficar macio.", "timer": 600},
+    {"text": "Finalize com cheiro-verde."}
+  ]},
+{"id": "canja-de-galinha", "title": "Canja de galinha", "category": "sopa", "prepTimeMinutes": 50, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "frango", "text": "500 g de peito de frango"}, {"id": "arroz", "text": "1/2 xícara de arroz"}, {"id": "cenoura", "text": "1 cenoura em cubos"}, {"id": "batata", "text": "1 batata em cubos", "optional": true}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "cheiro-verde", "text": "Cheiro-verde"}],
+  "steps": [
+    {"text": "Cozinhe o frango em 2 litros de água com sal, cebola e alho.", "timer": 1500},
+    {"text": "Retire o frango, desfie e volte para o caldo."},
+    {"text": "Junte o arroz, a cenoura e a batata e cozinhe até o arroz ficar bem macio.", "timer": 1200},
+    {"text": "Finalize com cheiro-verde."}
+  ]},
+{"id": "sopa-de-lentilha", "title": "Sopa de lentilha", "category": "sopa", "prepTimeMinutes": 45, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "lentilha", "text": "1 1/2 xícara de lentilha"}, {"id": "cenoura", "text": "1 cenoura em cubos"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "tomate", "text": "1 tomate picado"}, {"id": "bacon", "text": "100 g de bacon ou linguiça", "optional": true}, {"id": "cominho", "text": "1/2 colher (chá) de cominho", "optional": true}, {"id": "louro", "text": "1 folha de louro", "optional": true}],
+  "steps": [
+    {"text": "Doure o bacon, junte a cebola, o alho e o tomate e refogue.", "timer": 360},
+    {"text": "Adicione a lentilha lavada, a cenoura, o louro, o cominho e 1,5 litro de água.", "timer": 60},
+    {"text": "Cozinhe em fogo médio até a lentilha ficar bem macia.", "timer": 1800},
+    {"text": "Acerte o sal. Se quiser mais cremosa, bata metade no liquidificador."}
+  ]},
+{"id": "creme-de-abobora", "title": "Creme de abóbora", "category": "sopa", "prepTimeMinutes": 35, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "abobora", "text": "800 g de abóbora em cubos"}, {"id": "cebola", "text": "1 cebola"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "gengibre", "text": "1 colher (chá) de gengibre ralado", "optional": true}, {"id": "creme-de-leite", "text": "1/2 caixa de creme de leite", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola, o alho e o gengibre.", "timer": 180},
+    {"text": "Junte a abóbora, cubra com água e sal e cozinhe até desmanchar.", "timer": 1200},
+    {"text": "Bata no liquidificador até ficar liso."},
+    {"text": "Volte para a panela, misture o creme de leite e aqueça sem ferver.", "timer": 120}
+  ]},
+{"id": "sopa-de-feijao", "title": "Sopa de feijão com macarrão", "category": "sopa", "prepTimeMinutes": 30, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "feijao", "text": "3 xícaras de feijão cozido com caldo"}, {"id": "macarrao", "text": "1 xícara de macarrão pequeno (ave-maria ou argolinha)"}, {"id": "bacon", "text": "100 g de bacon", "optional": true}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Bata o feijão com o caldo no liquidificador."},
+    {"text": "Doure o bacon, junte a cebola e o alho.", "timer": 300},
+    {"text": "Adicione o feijão batido e 2 xícaras de água. Quando ferver, junte o macarrão.", "timer": 600},
+    {"text": "Cozinhe até o macarrão ficar macio e finalize com cheiro-verde."}
+  ]},
+{"id": "maionese-de-batata", "title": "Salada de maionese com batata", "category": "salada", "prepTimeMinutes": 40, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "batata", "text": "1 kg de batata em cubos"}, {"id": "cenoura", "text": "2 cenouras em cubos"}, {"id": "maionese", "text": "1 xícara de maionese"}, {"id": "ovo", "text": "3 ovos cozidos", "optional": true}, {"id": "milho", "text": "1/2 lata de milho", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe a batata e a cenoura em água com sal, sem deixar desmanchar.", "timer": 720},
+    {"text": "Escorra e espere esfriar completamente.", "timer": 1200},
+    {"text": "Misture com a maionese, os ovos picados, o milho e o cheiro-verde. Acerte o sal."},
+    {"text": "Sirva gelada."}
+  ]},
+{"id": "vinagrete", "title": "Vinagrete", "category": "salada", "prepTimeMinutes": 10, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "tomate", "text": "3 tomates em cubinhos"}, {"id": "cebola", "text": "1 cebola em cubinhos"}, {"id": "pimentao", "text": "1/2 pimentão em cubinhos", "optional": true}, {"id": "vinagre", "text": "3 colheres (sopa) de vinagre"}, {"id": "azeite", "text": "3 colheres (sopa) de azeite (ou óleo)"}, {"id": "cheiro-verde", "text": "Cheiro-verde picado"}],
+  "steps": [
+    {"text": "Misture o tomate, a cebola, o pimentão e o cheiro-verde."},
+    {"text": "Tempere com vinagre, azeite e sal."},
+    {"text": "Deixe na geladeira para pegar gosto antes de servir.", "timer": 900}
+  ]},
+{"id": "salada-de-grao-de-bico", "title": "Salada de grão-de-bico", "category": "salada", "prepTimeMinutes": 15, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "grao-de-bico", "text": "2 xícaras de grão-de-bico cozido"}, {"id": "tomate", "text": "2 tomates picados"}, {"id": "pepino", "text": "1 pepino picado"}, {"id": "cebola", "text": "1/2 cebola roxa picada"}, {"id": "limao", "text": "Suco de 1 limão"}, {"id": "azeite", "text": "3 colheres (sopa) de azeite"}, {"id": "cheiro-verde", "text": "Cheiro-verde ou hortelã"}],
+  "steps": [
+    {"text": "Misture o grão-de-bico, o tomate, o pepino, a cebola e as ervas."},
+    {"text": "Tempere com limão, azeite e sal."},
+    {"text": "Sirva fria. Dura bem 2 dias na geladeira."}
+  ]},
+{"id": "salada-caprese", "title": "Salada caprese", "category": "salada", "prepTimeMinutes": 10, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "tomate", "text": "2 tomates em rodelas"}, {"id": "queijo", "text": "150 g de muçarela (de búfala, se tiver) em rodelas"}, {"id": "manjericao", "text": "Folhas de manjericão"}, {"id": "azeite", "text": "Azeite"}, {"id": "oregano", "text": "Orégano", "optional": true}],
+  "steps": [
+    {"text": "Intercale rodelas de tomate e de muçarela numa travessa."},
+    {"text": "Distribua as folhas de manjericão por cima."},
+    {"text": "Regue com azeite e tempere com sal, pimenta e orégano."}
+  ]},
+{"id": "salada-de-repolho", "title": "Salada de repolho com cenoura", "category": "salada", "prepTimeMinutes": 15, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "repolho", "text": "1/4 de repolho fatiado bem fino"}, {"id": "cenoura", "text": "1 cenoura ralada"}, {"id": "maionese", "text": "3 colheres (sopa) de maionese"}, {"id": "limao", "text": "Suco de 1/2 limão"}, {"id": "maca", "text": "1/2 maçã em tiras", "optional": true}],
+  "steps": [
+    {"text": "Misture o repolho, a cenoura e a maçã."},
+    {"text": "Misture a maionese com o limão e uma pitada de sal e açúcar."},
+    {"text": "Junte o molho à salada e deixe na geladeira antes de servir.", "timer": 600}
+  ]},
+{"id": "farofa-de-bacon", "title": "Farofa de bacon", "category": "acompanhamento", "prepTimeMinutes": 15, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "farinha-mandioca", "text": "2 xícaras de farinha de mandioca"}, {"id": "bacon", "text": "150 g de bacon em cubos"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "manteiga", "text": "2 colheres (sopa) de manteiga"}, {"id": "ovo", "text": "2 ovos", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Doure o bacon até ficar crocante.", "timer": 360},
+    {"text": "Junte a manteiga e a cebola e refogue. Se usar, mexa os ovos junto.", "timer": 180},
+    {"text": "Adicione a farinha aos poucos, mexendo, até ficar dourada e soltinha.", "timer": 240},
+    {"text": "Acerte o sal e finalize com cheiro-verde."}
+  ]},
+{"id": "pure-de-batata", "title": "Purê de batata", "category": "acompanhamento", "prepTimeMinutes": 35, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "batata", "text": "1 kg de batata"}, {"id": "leite", "text": "3/4 de xícara de leite quente"}, {"id": "manteiga", "text": "2 colheres (sopa) de manteiga"}, {"id": "noz-moscada", "text": "1 pitada de noz-moscada", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe as batatas descascadas em água com sal até ficarem bem macias.", "timer": 1200},
+    {"text": "Escorra e amasse ainda quentes com um espremedor."},
+    {"text": "Leve ao fogo baixo com a manteiga e o leite, mexendo até ficar cremoso.", "timer": 180},
+    {"text": "Acerte o sal e a noz-moscada."}
+  ]},
+{"id": "couve-refogada", "title": "Couve refogada", "category": "acompanhamento", "prepTimeMinutes": 10, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "couve", "text": "1 maço de couve cortada fininha"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "bacon", "text": "50 g de bacon", "optional": true}],
+  "steps": [
+    {"text": "Doure o alho (e o bacon, se usar) num fio de óleo.", "timer": 120},
+    {"text": "Junte a couve e salteie em fogo alto só até murchar e ficar verde-brilhante.", "timer": 120},
+    {"text": "Tempere com sal e sirva na hora."}
+  ]},
+{"id": "batata-rustica", "title": "Batata rústica assada", "category": "acompanhamento", "prepTimeMinutes": 50, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "batata", "text": "6 batatas com casca em gomos"}, {"id": "azeite", "text": "4 colheres (sopa) de azeite"}, {"id": "alho", "text": "4 dentes de alho com casca"}, {"id": "paprica", "text": "1 colher (chá) de páprica", "optional": true}, {"id": "oregano", "text": "Alecrim ou orégano", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe as batatas em água com sal só até começarem a amolecer.", "timer": 420},
+    {"text": "Escorra, espalhe numa assadeira e tempere com azeite, sal, páprica, orégano e os dentes de alho."},
+    {"text": "Asse a 220 °C, virando na metade, até dourarem e ficarem crocantes.", "timer": 2100}
+  ]},
+{"id": "mandioca-frita", "title": "Mandioca frita", "category": "acompanhamento", "prepTimeMinutes": 45, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "mandioca", "text": "1 kg de mandioca"}, {"id": "oleo", "text": "Óleo para fritar"}, {"id": "sal", "text": "Sal a gosto"}],
+  "steps": [
+    {"text": "Cozinhe a mandioca em água com sal até ficar macia, mas sem desmanchar.", "timer": 1200},
+    {"text": "Escorra, corte em palitos grossos e deixe esfriar para não espirrar.", "timer": 600},
+    {"text": "Frite em óleo bem quente até dourar.", "timer": 360},
+    {"text": "Escorra em papel-toalha e salpique sal."}
+  ]},
+{"id": "creme-de-milho", "title": "Creme de milho", "category": "acompanhamento", "prepTimeMinutes": 15, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "milho", "text": "2 latas de milho escorrido"}, {"id": "leite", "text": "1 1/2 xícara de leite"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga"}, {"id": "cebola", "text": "1/2 cebola picada"}, {"id": "amido-milho", "text": "1 colher (sopa) de amido de milho"}, {"id": "queijo", "text": "Muçarela ou parmesão para gratinar", "optional": true}],
+  "steps": [
+    {"text": "Bata 1 lata e meia de milho com o leite e o amido no liquidificador."},
+    {"text": "Refogue a cebola na manteiga, junte a mistura batida e o resto do milho inteiro."},
+    {"text": "Cozinhe mexendo em fogo baixo até engrossar.", "timer": 360},
+    {"text": "Sirva assim ou cubra com queijo e gratine no forno.", "timer": 600}
+  ]},
+{"id": "chuchu-refogado", "title": "Chuchu refogado", "category": "acompanhamento", "prepTimeMinutes": 20, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "chuchu", "text": "3 chuchus em cubos"}, {"id": "cebola", "text": "1/2 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "tomate", "text": "1 tomate picado", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola e o alho num fio de óleo.", "timer": 120},
+    {"text": "Junte o chuchu e o tomate, tempere com sal e tampe. O chuchu cozinha na própria água.", "timer": 720},
+    {"text": "Finalize com cheiro-verde."}
+  ]},
+{"id": "couve-flor-gratinada", "title": "Couve-flor gratinada", "category": "acompanhamento", "prepTimeMinutes": 40, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "couve-flor", "text": "1 couve-flor em buquês"}, {"id": "leite", "text": "2 xícaras de leite"}, {"id": "manteiga", "text": "2 colheres (sopa) de manteiga"}, {"id": "farinha-trigo", "text": "2 colheres (sopa) de farinha de trigo"}, {"id": "queijo", "text": "1 xícara de muçarela ralada"}, {"id": "parmesao", "text": "Parmesão", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe a couve-flor em água com sal até ficar macia, mas firme.", "timer": 420},
+    {"text": "Faça um molho branco: derreta a manteiga, junte a farinha e depois o leite aos poucos, mexendo até engrossar.", "timer": 360},
+    {"text": "Coloque a couve-flor num refratário, cubra com o molho, a muçarela e o parmesão."},
+    {"text": "Gratine a 200 °C.", "timer": 900}
+  ]},
+{"id": "vagem-com-cenoura", "title": "Vagem com cenoura na manteiga", "category": "acompanhamento", "prepTimeMinutes": 20, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "vagem", "text": "300 g de vagem em pedaços"}, {"id": "cenoura", "text": "2 cenouras em palitos"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga"}, {"id": "alho", "text": "1 dente de alho", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe a vagem e a cenoura em água fervente com sal até ficarem macias, mas ainda crocantes.", "timer": 360},
+    {"text": "Escorra e passe na água fria para manter a cor."},
+    {"text": "Salteie na manteiga com o alho e acerte o sal.", "timer": 120}
+  ]}
+]

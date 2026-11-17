@@ -1,0 +1,163 @@
+[
+{"id": "macarrao-alho-e-oleo", "title": "Macarrão alho e óleo", "category": "prato-principal", "prepTimeMinutes": 20, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "macarrao", "text": "250 g de espaguete"}, {"id": "alho", "text": "5 dentes de alho fatiados"}, {"id": "azeite", "text": "1/4 de xícara de azeite"}, {"id": "cheiro-verde", "text": "Salsinha picada", "optional": true}, {"id": "parmesao", "text": "Parmesão ralado", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe o macarrão em bastante água fervente com sal, até ficar al dente. Guarde 1/2 xícara da água.", "timer": 540},
+    {"text": "Enquanto isso, doure o alho no azeite em fogo baixo, sem queimar.", "timer": 180},
+    {"text": "Junte o macarrão escorrido e um pouco da água do cozimento e misture bem.", "timer": 60},
+    {"text": "Finalize com salsinha e parmesão."}
+  ]},
+{"id": "macarrao-a-bolonhesa", "title": "Macarrão à bolonhesa", "category": "prato-principal", "prepTimeMinutes": 40, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "macarrao", "text": "500 g de macarrão"}, {"id": "carne-moida", "text": "500 g de carne moída"}, {"id": "molho-tomate", "text": "2 xícaras de molho de tomate"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "cenoura", "text": "1 cenoura ralada", "optional": true}, {"id": "parmesao", "text": "Parmesão ralado", "optional": true}],
+  "steps": [
+    {"text": "Doure a carne em fogo alto, junte a cebola, o alho e a cenoura e refogue.", "timer": 600},
+    {"text": "Adicione o molho de tomate e meia xícara de água. Cozinhe em fogo baixo, tampado.", "timer": 1200},
+    {"text": "Enquanto o molho apura, cozinhe o macarrão em água fervente com sal.", "timer": 540},
+    {"text": "Escorra, misture ao molho e sirva com parmesão."}
+  ]},
+{"id": "lasanha-a-bolonhesa", "title": "Lasanha à bolonhesa", "category": "prato-principal", "prepTimeMinutes": 80, "servings": 6, "difficulty": "media",
+  "ingredients": [{"id": "massa-lasanha", "text": "500 g de massa de lasanha (pré-cozida)"}, {"id": "carne-moida", "text": "500 g de carne moída"}, {"id": "molho-tomate", "text": "3 xícaras de molho de tomate"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "queijo", "text": "300 g de muçarela fatiada"}, {"id": "presunto", "text": "200 g de presunto fatiado"}, {"id": "parmesao", "text": "Parmesão ralado", "optional": true}],
+  "steps": [
+    {"text": "Doure a carne com a cebola, junte o molho e cozinhe para formar uma bolonhesa bem molhada.", "timer": 1200},
+    {"text": "Num refratário, faça camadas: molho, massa, presunto, queijo e molho. Repita até acabar, terminando com molho e queijo."},
+    {"text": "Cubra com papel-alumínio e asse a 200 °C.", "timer": 1800},
+    {"text": "Retire o papel, polvilhe parmesão e gratine.", "timer": 600},
+    {"text": "Deixe descansar antes de cortar para as camadas firmarem.", "timer": 600}
+  ]},
+{"id": "macarrao-ao-molho-branco", "title": "Macarrão ao molho branco", "category": "prato-principal", "prepTimeMinutes": 25, "servings": 3, "difficulty": "facil",
+  "ingredients": [{"id": "macarrao", "text": "350 g de macarrão"}, {"id": "leite", "text": "2 xícaras de leite"}, {"id": "manteiga", "text": "2 colheres (sopa) de manteiga"}, {"id": "farinha-trigo", "text": "2 colheres (sopa) de farinha de trigo"}, {"id": "parmesao", "text": "1/2 xícara de parmesão ralado"}, {"id": "noz-moscada", "text": "1 pitada de noz-moscada", "optional": true}, {"id": "presunto", "text": "Presunto em cubos", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe o macarrão em água fervente com sal.", "timer": 540},
+    {"text": "Derreta a manteiga, junte a farinha e mexa por 1 minuto.", "timer": 60},
+    {"text": "Adicione o leite aos poucos, mexendo sem parar, até engrossar. Tempere com sal e noz-moscada.", "timer": 300},
+    {"text": "Misture o parmesão, o presunto e o macarrão escorrido."}
+  ]},
+{"id": "macarrao-com-atum", "title": "Macarrão com atum", "category": "prato-principal", "prepTimeMinutes": 20, "servings": 3, "difficulty": "facil",
+  "ingredients": [{"id": "macarrao", "text": "300 g de macarrão"}, {"id": "atum", "text": "1 lata de atum"}, {"id": "molho-tomate", "text": "1 xícara de molho de tomate"}, {"id": "cebola", "text": "1/2 cebola picada"}, {"id": "alho", "text": "1 dente de alho"}, {"id": "azeitona", "text": "Azeitonas", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe o macarrão em água fervente com sal.", "timer": 540},
+    {"text": "Refogue a cebola e o alho, junte o atum e o molho de tomate.", "timer": 300},
+    {"text": "Misture o macarrão escorrido ao molho, com as azeitonas e o cheiro-verde."}
+  ]},
+{"id": "macarrao-carbonara", "title": "Macarrão à carbonara caseiro", "category": "prato-principal", "prepTimeMinutes": 25, "servings": 2, "difficulty": "media",
+  "ingredients": [{"id": "macarrao", "text": "250 g de espaguete"}, {"id": "bacon", "text": "150 g de bacon em cubos"}, {"id": "ovo", "text": "2 ovos + 1 gema"}, {"id": "parmesao", "text": "1/2 xícara de parmesão ralado"}, {"id": "pimenta-do-reino", "text": "Pimenta-do-reino moída na hora"}],
+  "steps": [
+    {"text": "Bata os ovos, a gema, o parmesão e bastante pimenta numa tigela."},
+    {"text": "Cozinhe o macarrão em água fervente com sal. Guarde 1/2 xícara da água.", "timer": 540},
+    {"text": "Doure o bacon numa frigideira até ficar crocante.", "timer": 360},
+    {"text": "Desligue o fogo, junte o macarrão ao bacon e despeje a mistura de ovos mexendo rápido, com um pouco da água, até ficar cremoso. Não volte ao fogo para o ovo não talhar."}
+  ]},
+{"id": "nhoque-de-batata", "title": "Nhoque de batata", "category": "prato-principal", "prepTimeMinutes": 70, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "batata", "text": "1 kg de batata"}, {"id": "farinha-trigo", "text": "1 1/2 xícara de farinha de trigo"}, {"id": "ovo", "text": "1 ovo"}, {"id": "manteiga", "text": "1 colher (sopa) de manteiga"}, {"id": "molho-tomate", "text": "2 xícaras de molho de tomate"}, {"id": "parmesao", "text": "Parmesão ralado", "optional": true}],
+  "steps": [
+    {"text": "Cozinhe as batatas com casca até ficarem macias.", "timer": 1500},
+    {"text": "Descasque ainda quentes e esprema. Misture a manteiga, o ovo, sal e a farinha aos poucos até a massa parar de grudar."},
+    {"text": "Faça rolinhos de 2 cm de espessura e corte em pedaços."},
+    {"text": "Cozinhe em água fervente com sal. Retire com escumadeira assim que subirem.", "timer": 180},
+    {"text": "Sirva com o molho quente e parmesão."}
+  ]},
+{"id": "arroz-branco", "title": "Arroz branco soltinho", "category": "acompanhamento", "prepTimeMinutes": 25, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "arroz", "text": "2 xícaras de arroz"}, {"id": "agua", "text": "4 xícaras de água quente"}, {"id": "alho", "text": "2 dentes de alho amassados"}, {"id": "cebola", "text": "1/4 de cebola picada", "optional": true}, {"id": "sal", "text": "1 colher (chá) de sal"}, {"id": "oleo", "text": "1 colher (sopa) de óleo"}],
+  "steps": [
+    {"text": "Refogue o alho e a cebola no óleo até perfumar.", "timer": 60},
+    {"text": "Junte o arroz e frite, mexendo, até os grãos ficarem opacos.", "timer": 120},
+    {"text": "Adicione a água quente e o sal. Cozinhe em fogo baixo com a panela semitampada até secar.", "timer": 900},
+    {"text": "Desligue e deixe descansar tampado antes de servir.", "timer": 300}
+  ]},
+{"id": "feijao-caseiro", "title": "Feijão caseiro", "category": "acompanhamento", "prepTimeMinutes": 60, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "feijao", "text": "2 xícaras de feijão carioca"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "cebola", "text": "1/2 cebola picada"}, {"id": "louro", "text": "2 folhas de louro", "optional": true}, {"id": "bacon", "text": "50 g de bacon", "optional": true}],
+  "steps": [
+    {"text": "Escolha e lave o feijão. Se der, deixe de molho por algumas horas.", "timer": 3600},
+    {"text": "Cozinhe na pressão com o louro e água cobrindo dois dedos acima.", "timer": 1500},
+    {"text": "Doure o bacon, o alho e a cebola numa frigideira."},
+    {"text": "Junte uma concha do feijão ao refogado, amasse e volte tudo para a panela. Cozinhe destampado até engrossar.", "timer": 600}
+  ]},
+{"id": "arroz-carreteiro", "title": "Arroz carreteiro", "category": "prato-principal", "prepTimeMinutes": 45, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "arroz", "text": "2 xícaras de arroz"}, {"id": "carne-seca", "text": "400 g de carne-seca dessalgada e cozida (ou sobra de churrasco)"}, {"id": "linguica", "text": "1 linguiça calabresa", "optional": true}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "tomate", "text": "1 tomate picado"}, {"id": "cheiro-verde", "text": "Cheiro-verde"}],
+  "steps": [
+    {"text": "Desfie a carne-seca e doure com a linguiça picada numa panela.", "timer": 480},
+    {"text": "Junte a cebola, o alho e o tomate e refogue.", "timer": 240},
+    {"text": "Adicione o arroz, misture e cubra com 4 xícaras de água quente.", "timer": 60},
+    {"text": "Cozinhe até secar e finalize com bastante cheiro-verde.", "timer": 1080}
+  ]},
+{"id": "baiao-de-dois", "title": "Baião de dois", "category": "prato-principal", "prepTimeMinutes": 50, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "arroz", "text": "1 1/2 xícara de arroz"}, {"id": "feijao", "text": "2 xícaras de feijão-de-corda (ou carioca) cozido, com caldo"}, {"id": "bacon", "text": "150 g de bacon"}, {"id": "linguica", "text": "1 linguiça calabresa", "optional": true}, {"id": "queijo-minas", "text": "150 g de queijo coalho ou minas em cubos"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "cheiro-verde", "text": "Coentro ou cheiro-verde"}],
+  "steps": [
+    {"text": "Doure o bacon e a linguiça picados.", "timer": 360},
+    {"text": "Junte a cebola e o alho, depois o arroz, e refogue.", "timer": 180},
+    {"text": "Adicione o feijão com caldo e água quente até cobrir 2 dedos. Cozinhe até o arroz ficar macio.", "timer": 1200},
+    {"text": "Misture o queijo e o coentro, tampe e deixe o queijo amolecer.", "timer": 180}
+  ]},
+{"id": "arroz-de-forno", "title": "Arroz de forno", "category": "prato-principal", "prepTimeMinutes": 40, "servings": 6, "difficulty": "facil",
+  "ingredients": [{"id": "arroz", "text": "4 xícaras de arroz cozido"}, {"id": "presunto", "text": "150 g de presunto em cubos"}, {"id": "queijo", "text": "200 g de muçarela ralada"}, {"id": "milho", "text": "1 lata de milho"}, {"id": "ervilha", "text": "1 lata de ervilha", "optional": true}, {"id": "molho-tomate", "text": "1 xícara de molho de tomate"}, {"id": "requeijao", "text": "1/2 copo de requeijão", "optional": true}, {"id": "frango", "text": "1 xícara de frango desfiado", "optional": true}],
+  "steps": [
+    {"text": "Misture o arroz com o presunto, o milho, a ervilha, o frango, o molho e o requeijão."},
+    {"text": "Coloque numa travessa e cubra com a muçarela."},
+    {"text": "Leve ao forno a 200 °C até o queijo derreter e dourar.", "timer": 1200}
+  ]},
+{"id": "tutu-de-feijao", "title": "Tutu de feijão", "category": "acompanhamento", "prepTimeMinutes": 30, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "feijao", "text": "3 xícaras de feijão cozido com caldo"}, {"id": "farinha-mandioca", "text": "1/2 xícara de farinha de mandioca"}, {"id": "bacon", "text": "100 g de bacon"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "cheiro-verde", "text": "Cheiro-verde", "optional": true}],
+  "steps": [
+    {"text": "Bata o feijão com o caldo no liquidificador."},
+    {"text": "Doure o bacon, junte a cebola e o alho.", "timer": 360},
+    {"text": "Adicione o feijão batido e, quando ferver, vá juntando a farinha aos poucos, mexendo até engrossar.", "timer": 300},
+    {"text": "Finalize com cheiro-verde."}
+  ]},
+{"id": "berinjela-a-parmegiana", "title": "Berinjela à parmegiana", "category": "prato-principal", "prepTimeMinutes": 60, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "berinjela", "text": "2 berinjelas em rodelas"}, {"id": "ovo", "text": "2 ovos batidos"}, {"id": "farinha-rosca", "text": "1 xícara de farinha de rosca"}, {"id": "molho-tomate", "text": "2 xícaras de molho de tomate"}, {"id": "queijo", "text": "200 g de muçarela"}, {"id": "parmesao", "text": "Parmesão ralado", "optional": true}],
+  "steps": [
+    {"text": "Salpique sal nas rodelas de berinjela e deixe soltar o amargor. Depois seque com papel.", "timer": 900},
+    {"text": "Passe no ovo e na farinha de rosca e asse numa assadeira untada a 200 °C, virando na metade.", "timer": 1200},
+    {"text": "Num refratário, alterne camadas de molho, berinjela e queijo."},
+    {"text": "Gratine a 200 °C.", "timer": 900}
+  ]},
+{"id": "hamburguer-de-grao-de-bico", "title": "Hambúrguer de grão-de-bico", "category": "prato-principal", "prepTimeMinutes": 40, "servings": 4, "difficulty": "media",
+  "ingredients": [{"id": "grao-de-bico", "text": "2 xícaras de grão-de-bico cozido"}, {"id": "cebola", "text": "1/2 cebola"}, {"id": "alho", "text": "1 dente de alho"}, {"id": "farinha-rosca", "text": "1/2 xícara de farinha de rosca (ou aveia)"}, {"id": "cominho", "text": "1/2 colher (chá) de cominho", "optional": true}, {"id": "cheiro-verde", "text": "Cheiro-verde"}],
+  "steps": [
+    {"text": "Triture o grão-de-bico com a cebola, o alho, o cheiro-verde, o cominho e sal, deixando alguns pedacinhos."},
+    {"text": "Misture a farinha de rosca até a massa dar liga e modele 4 discos."},
+    {"text": "Leve à geladeira para firmar.", "timer": 900},
+    {"text": "Doure numa frigideira com um fio de óleo, dos dois lados.", "timer": 360}
+  ]},
+{"id": "abobrinha-recheada", "title": "Abobrinha recheada", "category": "prato-principal", "prepTimeMinutes": 45, "servings": 2, "difficulty": "facil",
+  "ingredients": [{"id": "abobrinha", "text": "2 abobrinhas"}, {"id": "tomate", "text": "1 tomate picado"}, {"id": "cebola", "text": "1/2 cebola picada"}, {"id": "queijo", "text": "1 xícara de muçarela ralada"}, {"id": "carne-moida", "text": "200 g de carne moída", "optional": true}, {"id": "oregano", "text": "Orégano", "optional": true}],
+  "steps": [
+    {"text": "Corte as abobrinhas ao meio no comprido e retire o miolo com uma colher. Pique o miolo."},
+    {"text": "Refogue a cebola, o miolo picado, o tomate e a carne, se usar. Tempere.", "timer": 480},
+    {"text": "Recheie as abobrinhas, cubra com queijo e orégano."},
+    {"text": "Asse a 200 °C até a abobrinha amaciar e o queijo dourar.", "timer": 1500}
+  ]},
+{"id": "grao-de-bico-ao-leite-de-coco", "title": "Grão-de-bico ao leite de coco", "category": "prato-principal", "prepTimeMinutes": 30, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "grao-de-bico", "text": "2 xícaras de grão-de-bico cozido"}, {"id": "leite-coco", "text": "1 vidro de leite de coco"}, {"id": "tomate", "text": "2 tomates picados"}, {"id": "cebola", "text": "1 cebola picada"}, {"id": "alho", "text": "2 dentes de alho"}, {"id": "acafrao", "text": "1 colher (chá) de açafrão-da-terra"}, {"id": "gengibre", "text": "Gengibre ralado", "optional": true}, {"id": "espinafre", "text": "1 maço de espinafre", "optional": true}],
+  "steps": [
+    {"text": "Refogue a cebola, o alho, o gengibre e o açafrão.", "timer": 240},
+    {"text": "Junte o tomate e cozinhe até desmanchar.", "timer": 300},
+    {"text": "Adicione o grão-de-bico e o leite de coco e cozinhe em fogo baixo até encorpar.", "timer": 600},
+    {"text": "Se usar, misture o espinafre no final só para murchar. Sirva com arroz."}
+  ]},
+{"id": "yakissoba-simples", "title": "Yakissoba simples", "category": "prato-principal", "prepTimeMinutes": 35, "servings": 3, "difficulty": "media",
+  "ingredients": [{"id": "macarrao", "text": "250 g de macarrão para yakissoba (ou espaguete)"}, {"id": "repolho", "text": "2 xícaras de repolho picado"}, {"id": "cenoura", "text": "1 cenoura em tiras"}, {"id": "brocolis", "text": "1 xícara de brócolis", "optional": true}, {"id": "frango", "text": "300 g de frango em tiras", "optional": true}, {"id": "shoyu", "text": "1/2 xícara de shoyu"}, {"id": "amido-milho", "text": "1 colher (sopa) de amido de milho"}],
+  "steps": [
+    {"text": "Cozinhe o macarrão e escorra.", "timer": 420},
+    {"text": "Numa frigideira grande e bem quente, doure o frango.", "timer": 360},
+    {"text": "Junte a cenoura, o brócolis e o repolho e salteie, mantendo crocantes.", "timer": 240},
+    {"text": "Dissolva o amido no shoyu com 1 xícara de água, despeje e mexa até engrossar.", "timer": 120},
+    {"text": "Misture o macarrão ao molho e sirva."}
+  ]},
+{"id": "arroz-de-brocolis", "title": "Arroz de brócolis", "category": "acompanhamento", "prepTimeMinutes": 30, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "arroz", "text": "2 xícaras de arroz"}, {"id": "brocolis", "text": "1 maço de brócolis picado"}, {"id": "alho", "text": "3 dentes de alho"}, {"id": "cebola", "text": "1/4 de cebola", "optional": true}],
+  "steps": [
+    {"text": "Refogue o alho e a cebola, junte o arroz e frite levemente.", "timer": 120},
+    {"text": "Cubra com 4 xícaras de água quente e sal e cozinhe.", "timer": 600},
+    {"text": "Quando a água estiver quase secando, junte o brócolis por cima e tampe.", "timer": 360},
+    {"text": "Misture e deixe descansar tampado.", "timer": 300}
+  ]},
+{"id": "polenta-cremosa", "title": "Polenta cremosa com molho", "category": "prato-principal", "prepTimeMinutes": 35, "servings": 4, "difficulty": "facil",
+  "ingredients": [{"id": "fuba", "text": "1 xícara de fubá"}, {"id": "agua", "text": "4 xícaras de água"}, {"id": "manteiga", "text": "2 colheres (sopa) de manteiga"}, {"id": "parmesao", "text": "1/2 xícara de parmesão ralado"}, {"id": "molho-tomate", "text": "2 xícaras de molho de tomate (ou carne moída refogada)"}],
+  "steps": [
+    {"text": "Dissolva o fubá em 1 xícara de água fria."},
+    {"text": "Ferva o resto da água com sal, junte o fubá dissolvido e mexa sem parar em fogo baixo até engrossar e soltar do fundo.", "timer": 1200},
+    {"text": "Desligue e misture a manteiga e o parmesão."},
+    {"text": "Sirva em pratos fundos com o molho quente por cima."}
+  ]}
+]
