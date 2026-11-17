@@ -1,31 +1,34 @@
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from 'react';
 import {
   Alert,
   Animated,
   Easing,
+  Pressable,
   ScrollView,
   Text,
+  TextInput,
   Vibration,
   View,
-} from "react-native";
-
-import { useRouter } from "expo-router";
-import { INGREDIENTS } from "../../features/pantry/ingredients";
-import { usePantry } from "../../features/pantry/store";
-import { useRecipeHistory } from "../../features/recipes/history";
-import { getRandomRecipe } from "../../features/recipes/service";
-import { useShake } from "../../features/shake/useShake";
-import { Button } from "../../ui/Button";
-import { Chip } from "../../ui/Chip";
-import { colors } from "../../ui/theme";
+} from 'react-native';
+import * as Haptics from 'expo-haptics';
+import { useRouter } from 'expo-router';
+import { INGREDIENTS } from '../../features/pantry/ingredients';
+import { usePantry } from '../../features/pantry/store';
+import { useRecipeHistory } from '../../features/recipes/history';
+import { getRandomRecipe } from '../../features/recipes/service';
+import { useShake } from '../../features/shake/useShake';
+import { Button } from '../../ui/Button';
+import { Chip } from '../../ui/Chip';
+import { colors, radius } from '../../ui/theme';
 
 export default function Despensa() {
   const router = useRouter();
-  const { selected, toggle } = usePantry();
+  const { selected, customIngredients, toggle, addCustomIngredient, clear } = usePantry();
+  const [search, setSearch] = useState('');
 
   const [sorteando, setSorteando] = useState(false);
 
-  const { recentIds, add, clear } = useRecipeHistory();
+  const { recentIds, add, clearHistory } = useRecipeHistory();
 
   const sorteioEmAndamento = useRef(false);
 
@@ -63,7 +66,7 @@ export default function Despensa() {
   };
 
   const sortear = async () => {
-    if (sorteioEmAndamento.current) return;
+if (sorteioEmAndamento.current) return;
 
     if (selected.length === 0) {
       Alert.alert(
@@ -85,7 +88,7 @@ export default function Despensa() {
       let recipe = await getRandomRecipe(selected, recentIds);
 
       if (!recipe && recentIds.length > 0) {
-        clear();
+        clearHistory();
         recipe = await getRandomRecipe(selected);
 
         if (recipe) {
@@ -126,7 +129,41 @@ export default function Despensa() {
 
   useShake(sortear);
 
-  const categories = [...new Set(INGREDIENTS.map((i) => i.category))];
+  const allIngredients = useMemo(
+    () => [...INGREDIENTS, ...customIngredients],
+    [customIngredients]
+  );
+
+  const filteredIngredients = useMemo(() => {
+    const query = search.trim().toLowerCase();
+    if (!query) return allIngredients;
+    return allIngredients.filter((item) =>
+      item.name.toLowerCase().includes(query)
+    );
+  }, [allIngredients, search]);
+
+  const categories = useMemo(
+    () => [...new Set(filteredIngredients.map((i) => i.category))],
+    [filteredIngredients]
+  );
+
+  const handleToggle = (name: string) => {
+    Haptics.selectionAsync().catch(() => {});
+    toggle(name);
+  };
+
+  const handleAddCustom = () => {
+    const trimmed = search.trim();
+    if (!trimmed) return;
+    Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success).catch(() => {});
+    addCustomIngredient(trimmed);
+    setSearch('');
+  };
+
+  const handleClear = () => {
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+    clear();
+  };
 
   // Movimento de giro do prato
   const rotacao = animacao.interpolate({
@@ -136,50 +173,143 @@ export default function Despensa() {
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
-      <ScrollView contentContainerStyle={{ padding: 20 }}>
-        <Text
+
+      <ScrollView
+        contentContainerStyle={{ padding: 20, paddingBottom: 32 }}
+        keyboardShouldPersistTaps="handled"
+      >
+        <View
           style={{
-            fontSize: 28,
-            fontWeight: "800",
-            color: colors.ink,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            gap: 12,
           }}
         >
-          O que tem na geladeira?
-        </Text>
+          <Text
+            style={{
+              flex: 1,
+              fontSize: 28,
+              fontWeight: '800',
+              color: colors.ink,
+            }}
+          >
+            O que tem na geladeira?
+          </Text>
 
-        {categories.map((cat) => (
-          <View key={cat} style={{ marginTop: 16 }}>
-            <Text
+          {selected.length > 0 && (
+            <Pressable
+              onPress={handleClear}
+              accessibilityRole="button"
               style={{
-                fontSize: 15,
-                color: colors.muted,
-                marginBottom: 8,
+                paddingHorizontal: 12,
+                paddingVertical: 8,
+                borderRadius: radius.chip,
+                borderWidth: 1.5,
+                borderColor: colors.border,
+                backgroundColor: colors.card,
               }}
             >
-              {cat}
+              <Text style={{ fontSize: 13, fontWeight: '700', color: colors.muted }}>
+                Limpar ({selected.length})
+              </Text>
+            </Pressable>
+          )}
+        </View>
+
+        <View style={{ marginTop: 14 }}>
+          <TextInput
+            value={search}
+            onChangeText={setSearch}
+            placeholder="Buscar ou adicionar ingrediente..."
+            placeholderTextColor={colors.muted}
+            returnKeyType="done"
+            onSubmitEditing={
+              filteredIngredients.length === 0 ? handleAddCustom : undefined
+            }
+            style={{
+              height: 48,
+              backgroundColor: colors.card,
+              borderRadius: radius.chip,
+              borderWidth: 1.5,
+              borderColor: colors.border,
+              paddingHorizontal: 16,
+              fontSize: 15,
+              color: colors.ink,
+            }}
+          />
+        </View>
+
+        {categories.length === 0 ? (
+          <View
+            style={{
+              marginTop: 24,
+              padding: 20,
+              backgroundColor: colors.card,
+              borderRadius: radius.card,
+              borderWidth: 1.5,
+              borderColor: colors.border,
+              alignItems: 'center',
+              gap: 12,
+            }}
+          >
+            <Text style={{ fontSize: 15, color: colors.muted, textAlign: 'center' }}>
+              Nenhum ingrediente encontrado para "{search.trim()}".
             </Text>
-
-            <View
+            <Pressable
+              onPress={handleAddCustom}
+              accessibilityRole="button"
               style={{
-                flexDirection: "row",
-                flexWrap: "wrap",
-                gap: 8,
+                paddingHorizontal: 18,
+                paddingVertical: 12,
+                borderRadius: radius.button,
+                backgroundColor: colors.green,
               }}
             >
-              {INGREDIENTS.filter((i) => i.category === cat).map((i) => (
-                <Chip
-                  key={i.id}
-                  label={i.name}
-                  selected={selected.includes(i.name)}
-                  onPress={() => toggle(i.name)}
-                />
-              ))}
-            </View>
+              <Text style={{ color: '#FFFFFF', fontWeight: '700', fontSize: 15 }}>
+                + Adicionar "{search.trim()}"
+              </Text>
+            </Pressable>
+
           </View>
-        ))}
+        ) : (
+          categories.map((cat) => (
+            <View key={cat} style={{ marginTop: 18 }}>
+              <Text
+                style={{
+                  fontSize: 15,
+                  fontWeight: '700',
+                  color: colors.muted,
+                  marginBottom: 8,
+                }}
+              >
+                {cat}
+              </Text>
+              <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                {filteredIngredients
+                  .filter((i) => i.category === cat)
+                  .map((i) => (
+                    <Chip
+                      key={i.id}
+                      label={i.name}
+                      selected={selected.includes(i.name)}
+                      onPress={() => handleToggle(i.name)}
+                    />
+                  ))}
+              </View>
+            </View>
+          ))
+        )}
       </ScrollView>
 
-      <View style={{ padding: 20 }}>
+<View
+        style={{
+          padding: 20,
+          borderTopWidth: 1,
+          borderTopColor: colors.border,
+          backgroundColor: colors.bg,
+        }}
+      >
         <Button
           label={
             sorteando ? "Sorteando..." : `Sortear receita (${selected.length})`
