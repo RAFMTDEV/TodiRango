@@ -149,19 +149,18 @@ export async function getRandomRecipe(
   excludedIds: string[] = [],
 ): Promise<Recipe | null> {
   const excluded = new Set(excludedIds);
-  const available = (await searchByPantry(have)).filter(
+  const available = (await searchByPantry(have, 99)).filter(
     (m) => !excluded.has(m.recipe.id),
   );
   if (available.length === 0) return null;
-  const best = available.filter(
-    (m) => m.missing.length === available[0].missing.length,
-  );
-  let pick = Math.random() * best.reduce((sum, m) => sum + m.used.length, 0);
-  for (const m of best) {
-    pick -= m.used.length;
-    if (pick < 0) return m.recipe;
-  }
-  return best[0].recipe;
+
+  const maisUtilizadas = Math.max(...available.map((m) => m.used.length));
+  const top = available.filter((m) => m.used.length === maisUtilizadas);
+
+  const menosFalta = Math.min(...top.map((m) => m.missing.length));
+  const best = top.filter((m) => m.missing.length === menosFalta);
+
+  return best[Math.floor(Math.random() * best.length)].recipe;
 }
 
 let ingredientsCache: Ingredient[] | null = null;
