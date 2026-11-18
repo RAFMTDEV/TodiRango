@@ -3,6 +3,7 @@ import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 import { Recipe } from '../../types';
 import { getRecipeById, ingredientName, toIngredientIds } from '../recipes/service';
+import { addPurchasedToPantry } from './pantrySync';
 
 type FavState = {
   ids: string[]; // mantido: a tela da receita já usa
@@ -64,7 +65,8 @@ type ShopState = {
   items: ShoppingItem[];
   add: (name: string) => boolean;
   addMissing: (ids: string[]) => number;
-  toggle: (id: string) => void;
+  /** Alterna comprado/pendente. Devolve true se enviou o item para a Despensa. */
+  toggle: (id: string) => boolean;
   remove: (id: string) => void;
   clearDone: () => void;
 };
@@ -97,10 +99,16 @@ export const useShoppingList = create<ShopState>()(
         }));
         return toAdd.length;
       },
-      toggle: (id) =>
+      toggle: (id) => {
+        const item = get().items.find((i) => i.id === id);
+        if (!item) return false;
+        const done = !item.done;
         set((s) => ({
-          items: s.items.map((i) => (i.id === id ? { ...i, done: !i.done } : i)),
-        })),
+          items: s.items.map((i) => (i.id === id ? { ...i, done } : i)),
+        }));
+        // ao marcar como comprado, o ingrediente vai para a Despensa
+        return done ? addPurchasedToPantry(item) : false;
+      },
       remove: (id) => set((s) => ({ items: s.items.filter((i) => i.id !== id) })),
       clearDone: () => set((s) => ({ items: s.items.filter((i) => !i.done) })),
     }),

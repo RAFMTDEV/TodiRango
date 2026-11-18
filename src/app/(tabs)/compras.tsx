@@ -98,6 +98,11 @@ export default function Compras() {
     }
   };
 
+  const handleToggle = (item: ShoppingItem) => {
+    const sentToPantry = toggle(item.id);
+    setMessage(sentToPantry ? `${item.name} foi adicionado à Despensa.` : null);
+  };
+
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg, padding: 20, gap: 12 }}>
       <View style={{ flexDirection: 'row', gap: 8 }}>
@@ -146,7 +151,7 @@ export default function Compras() {
         renderItem={({ item }) => (
           <ItemRow
             item={item}
-            onToggle={() => toggle(item.id)}
+            onToggle={() => handleToggle(item)}
             onRemove={() => remove(item.id)}
           />
         )}
