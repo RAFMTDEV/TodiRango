@@ -1,17 +1,23 @@
 import { useRouter } from 'expo-router';
+import { useState } from 'react';
 import { Alert, FlatList, Pressable, Text, View } from 'react-native';
+import { usePantry } from '../../features/pantry/store';
 import { categoryInfo, DIFFICULTY_LABEL } from '../../features/recipes/categories';
-import { useFavorites } from '../../features/storage/stores';
+import { getMissingIngredients } from '../../features/storage/missing';
+import { useFavorites, useShoppingList } from '../../features/storage/stores';
 import { Recipe } from '../../types';
+import { Button } from '../../ui/Button';
 import { colors, radius } from '../../ui/theme';
 
 type CardProps = {
   recipe: Recipe;
   onOpen: () => void;
   onRemove: () => void;
+  onAddMissing: () => void;
+  busy: boolean;
 };
 
-function FavoriteCard({ recipe, onOpen, onRemove }: CardProps) {
+function FavoriteCard({ recipe, onOpen, onRemove, onAddMissing, busy }: CardProps) {
   const category = categoryInfo(recipe.category);
 
   return (
@@ -39,6 +45,15 @@ function FavoriteCard({ recipe, onOpen, onRemove }: CardProps) {
         {DIFFICULTY_LABEL[recipe.difficulty]}
       </Text>
 
+      <View style={{ marginTop: 6 }}>
+        <Button
+          label={busy ? 'Verificando...' : 'Adicionar o que falta'}
+          variant="outline"
+          onPress={onAddMissing}
+          disabled={busy}
+        />
+      </View>
+
       <Pressable
         onPress={onRemove}
         accessibilityRole="button"
@@ -59,11 +74,38 @@ export default function Favoritos() {
   const items = useFavorites((s) => s.items);
   const remove = useFavorites((s) => s.remove);
 
+  const pantry = usePantry((s) => s.selected);
+  const addMissing = useShoppingList((s) => s.addMissing);
+  const [busyId, setBusyId] = useState<string | null>(null);
+
   const confirmRemove = (recipe: Recipe) => {
     Alert.alert('Remover favorito', `Remover "${recipe.title}" dos favoritos?`, [
       { text: 'Cancelar', style: 'cancel' },
       { text: 'Remover', style: 'destructive', onPress: () => remove(recipe.id) },
     ]);
+  };
+
+  const handleAddMissing = async (recipe: Recipe) => {
+    if (busyId) return;
+    setBusyId(recipe.id);
+    try {
+      const missing = await getMissingIngredients(recipe, pantry);
+      if (missing.length === 0) {
+        Alert.alert('Tudo certo', 'Você já tem todos os ingredientes principais desta receita.');
+        return;
+      }
+      const added = addMissing(missing);
+      Alert.alert(
+        added > 0 ? 'Lista atualizada' : 'Nada novo',
+        added > 0
+          ? `${added} ingrediente${added === 1 ? '' : 's'} adicionado${added === 1 ? '' : 's'} à lista de compras.`
+          : 'Os ingredientes que faltam já estão na lista de compras.',
+      );
+    } catch {
+      Alert.alert('Erro', 'Não foi possível verificar os ingredientes agora.');
+    } finally {
+      setBusyId(null);
+    }
   };
 
   return (
@@ -81,13 +123,15 @@ export default function Favoritos() {
           <Text style={{ color: colors.muted, marginBottom: 4 }}>
             {items.length} {items.length === 1 ? 'receita salva' : 'receitas salvas'}
           </Text>
-        ) : undefined 
+        ) : undefined
       }
       renderItem={({ item }) => (
         <FavoriteCard
           recipe={item}
           onOpen={() => router.push(`/receita/${item.id}`)}
           onRemove={() => confirmRemove(item)}
+          onAddMissing={() => handleAddMissing(item)}
+          busy={busyId === item.id}
         />
       )}
       ListEmptyComponent={
