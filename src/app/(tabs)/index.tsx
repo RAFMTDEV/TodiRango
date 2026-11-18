@@ -1,3 +1,5 @@
+import * as Haptics from 'expo-haptics';
+import { useRouter } from 'expo-router';
 import { useMemo, useRef, useState } from 'react';
 import {
   Alert,
@@ -10,8 +12,6 @@ import {
   Vibration,
   View,
 } from 'react-native';
-import * as Haptics from 'expo-haptics';
-import { useRouter } from 'expo-router';
 import { INGREDIENTS } from '../../features/pantry/ingredients';
 import { usePantry } from '../../features/pantry/store';
 import { useRecipeHistory } from '../../features/recipes/history';
@@ -23,16 +23,16 @@ import { colors, radius } from '../../ui/theme';
 
 export default function Despensa() {
   const router = useRouter();
-  const { selected, customIngredients, toggle, addCustomIngredient, clear } = usePantry();
+  const { selected, customIngredients, toggle, addCustomIngredient, clear: clearPantry } = usePantry();
   const [search, setSearch] = useState('');
 
   const [sorteando, setSorteando] = useState(false);
 
-  const { recentIds, add, clearHistory } = useRecipeHistory();
+  const { recentIds, add, clear: clearHistory } = useRecipeHistory();
 
   const sorteioEmAndamento = useRef(false);
 
-  // Valor utilizado para animar o prato
+  
   const animacao = useRef(new Animated.Value(0)).current;
 
   const animacaoLoop = useRef<Animated.CompositeAnimation | null>(null);
@@ -162,7 +162,7 @@ if (sorteioEmAndamento.current) return;
 
   const handleClear = () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-    clear();
+    clearPantry();
   };
 
   // Movimento de giro do prato
