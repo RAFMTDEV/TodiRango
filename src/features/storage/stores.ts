@@ -1,17 +1,60 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
+import { Recipe } from '../../types';
+import { getRecipeById } from '../recipes/service';
 
-type FavState = { ids: string[]; toggle: (id: string) => void };
+type FavState = {
+  ids: string[]; // mantido: a tela da receita já usa
+  items: Recipe[]; // receitas completas (funciona offline)
+  add: (recipe: Recipe) => void;
+  toggle: (id: string) => void;
+  remove: (id: string) => void;
+};
+
 export const useFavorites = create<FavState>()(
   persist(
-    (set) => ({
+    (set, get) => ({
       ids: [],
-      toggle: (id) => set((s) => ({ ids: s.ids.includes(id) ? s.ids.filter((i) => i !== id) : [...s.ids, id] })),
+      items: [],
+      add: (recipe) =>
+        set((s) =>
+          s.ids.includes(recipe.id)
+            ? s
+            : { ids: [recipe.id, ...s.ids], items: [recipe, ...s.items] },
+        ),
+      toggle: (id) => {
+        if (get().ids.includes(id)) {
+          get().remove(id);
+          return;
+        }
+        getRecipeById(id)
+          .then((recipe) => {
+            if (recipe) get().add(recipe);
+          })
+          .catch((err) => {
+            if (__DEV__) console.warn('[favoritos] não foi possível salvar', err);
+          });
+      },
+      remove: (id) =>
+        set((s) => ({
+          ids: s.ids.filter((i) => i !== id),
+          items: s.items.filter((r) => r.id !== id),
+        })),
     }),
-    { name: 'favoritos', storage: createJSONStorage(() => AsyncStorage) },
+    {
+      name: 'favoritos',
+      version: 1,
+      storage: createJSONStorage(() => AsyncStorage),
+      partialize: (s) => ({ ids: s.ids, items: s.items }),
+      // v0 guardava só ids. Descartamos o formato antigo com segurança.
+      migrate: () => ({ ids: [], items: [] }),
+    },
   ),
 );
+
+export const useIsFavorite = (id: string) =>
+  useFavorites((s) => s.ids.includes(id));
 
 type Item = { id: string; name: string; done: boolean };
 type ShopState = {
@@ -31,4 +74,3 @@ export const useShoppingList = create<ShopState>()(
     { name: 'compras', storage: createJSONStorage(() => AsyncStorage) },
   ),
 );
-
