@@ -1,26 +1,22 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   ActivityIndicator,
   FlatList,
-  Pressable,
   RefreshControl,
   ScrollView,
   Text,
   TextInput,
   View,
-} from "react-native";
-import { useRouter } from "expo-router";
-import {
-  CATEGORIES,
-  categoryInfo,
-  DIFFICULTY_LABEL,
-} from "../../features/recipes/categories";
-import { filterRecipes } from "../../features/recipes/search";
-import { dataSource, loadRecipes } from "../../features/recipes/service";
-import { Recipe, RecipeCategory } from "../../types";
-import { Button } from "../../ui/Button";
-import { Chip } from "../../ui/Chip";
-import { colors, radius, space } from "../../ui/theme";
+} from 'react-native';
+import { useRouter } from 'expo-router';
+import { CATEGORIES, categoryInfo, DIFFICULTY_LABEL } from '../../features/recipes/categories';
+import { filterRecipes } from '../../features/recipes/search';
+import { dataSource, loadRecipes } from '../../features/recipes/service';
+import { Recipe, RecipeCategory } from '../../types';
+import { Button } from '../../ui/Button';
+import { Card } from '../../ui/Card';
+import { Chip } from '../../ui/Chip';
+import { colors, radius, space } from '../../ui/theme';
 
 export default function Explorar() {
   const router = useRouter();
@@ -29,11 +25,11 @@ export default function Explorar() {
   const [refreshing, setRefreshing] = useState(false);
   const [offline, setOffline] = useState(false);
   const [category, setCategory] = useState<RecipeCategory | null>(null);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
 
   const load = useCallback(async (force = false) => {
     setRecipes(await loadRecipes(force));
-    setOffline(dataSource() === "local");
+    setOffline(dataSource() === 'local');
   }, []);
 
   useEffect(() => {
@@ -56,8 +52,8 @@ export default function Explorar() {
       <View
         style={{
           flex: 1,
-          alignItems: "center",
-          justifyContent: "center",
+          alignItems: 'center',
+          justifyContent: 'center',
           backgroundColor: colors.bg,
         }}
       >
@@ -95,11 +91,7 @@ export default function Explorar() {
           keyboardShouldPersistTaps="handled"
           contentContainerStyle={{ paddingHorizontal: 20, gap: space.sm }}
         >
-          <Chip
-            label="Todas"
-            selected={category === null}
-            onPress={() => setCategory(null)}
-          />
+          <Chip label="Todas" selected={category === null} onPress={() => setCategory(null)} />
           {CATEGORIES.map((c) => (
             <Chip
               key={c.id}
@@ -111,19 +103,15 @@ export default function Explorar() {
         </ScrollView>
         <View
           style={{
-            flexDirection: "row",
-            justifyContent: "space-between",
+            flexDirection: 'row',
+            justifyContent: 'space-between',
             paddingHorizontal: 20,
           }}
         >
           <Text style={{ color: colors.muted }}>
-            {visible.length} {visible.length === 1 ? "receita" : "receitas"}
+            {visible.length} {visible.length === 1 ? 'receita' : 'receitas'}
           </Text>
-          {offline && (
-            <Text style={{ color: colors.orange, fontWeight: "700" }}>
-              Modo offline
-            </Text>
-          )}
+          {offline && <Text style={{ color: colors.orange, fontWeight: '700' }}>Modo offline</Text>}
         </View>
       </View>
 
@@ -134,37 +122,28 @@ export default function Explorar() {
         keyboardShouldPersistTaps="handled"
         keyboardDismissMode="on-drag"
         refreshControl={
-          <RefreshControl
-            refreshing={refreshing}
-            onRefresh={refresh}
-            colors={[colors.green]}
-          />
+          <RefreshControl refreshing={refreshing} onRefresh={refresh} colors={[colors.green]} />
         }
         renderItem={({ item }) => (
-          <RecipeCard
-            recipe={item}
-            onPress={() => router.push(`/receita/${item.id}`)}
-          />
+          <RecipeCard recipe={item} onPress={() => router.push(`/receita/${item.id}`)} />
         )}
         ListEmptyComponent={
           <View
             style={{
               flex: 1,
-              alignItems: "center",
-              justifyContent: "center",
+              alignItems: 'center',
+              justifyContent: 'center',
               gap: space.md,
             }}
           >
-            <Text
-              style={{ fontSize: 17, fontWeight: "700", color: colors.ink }}
-            >
+            <Text style={{ fontSize: 17, fontWeight: '700', color: colors.ink }}>
               Nenhuma receita encontrada
             </Text>
             <Button
               label="Limpar filtros"
               variant="outline"
               onPress={() => {
-                setQuery("");
+                setQuery('');
                 setCategory(null);
               }}
             />
@@ -175,55 +154,34 @@ export default function Explorar() {
   );
 }
 
-function RecipeCard({
-  recipe,
-  onPress,
-}: {
-  recipe: Recipe;
-  onPress: () => void;
-}) {
+function RecipeCard({ recipe, onPress }: { recipe: Recipe; onPress: () => void }) {
   return (
-    <Pressable
+    <Card
       onPress={onPress}
-      accessibilityRole="button"
-      style={({ pressed }) => ({
-        flexDirection: "row",
-        alignItems: "center",
-        gap: space.md,
-        padding: 12,
-        borderRadius: radius.card,
-        borderWidth: 2,
-        borderColor: colors.border,
-        backgroundColor: colors.card,
-        opacity: pressed ? 0.7 : 1,
-      })}
+      accessibilityLabel={recipe.title}
+      style={{ flexDirection: 'row', alignItems: 'center', gap: space.md, padding: 12 }}
     >
       <View
         style={{
           width: 56,
           height: 56,
           borderRadius: 16,
-          alignItems: "center",
-          justifyContent: "center",
+          alignItems: 'center',
+          justifyContent: 'center',
           backgroundColor: colors.bg,
         }}
       >
-        <Text style={{ fontSize: 28 }}>
-          {categoryInfo(recipe.category).emoji}
-        </Text>
+        <Text style={{ fontSize: 28 }}>{categoryInfo(recipe.category).emoji}</Text>
       </View>
       <View style={{ flex: 1, gap: space.xs }}>
-        <Text
-          numberOfLines={2}
-          style={{ fontSize: 16, fontWeight: "700", color: colors.ink }}
-        >
+        <Text numberOfLines={2} style={{ fontSize: 16, fontWeight: '700', color: colors.ink }}>
           {recipe.title}
         </Text>
         <Text style={{ fontSize: 13, color: colors.muted }}>
-          {recipe.prepTimeMinutes} min · {DIFFICULTY_LABEL[recipe.difficulty]} ·{" "}
-          {recipe.servings} {recipe.servings === 1 ? "porção" : "porções"}
+          {recipe.prepTimeMinutes} min · {DIFFICULTY_LABEL[recipe.difficulty]} · {recipe.servings}{' '}
+          {recipe.servings === 1 ? 'porção' : 'porções'}
         </Text>
       </View>
-    </Pressable>
+    </Card>
   );
 }

@@ -1,41 +1,53 @@
 # TodiRango
 
-Copie a pasta `src/` para o projeto Expo (o expo-router lê `src/app`; se o template usa `app/` na raiz, mova as rotas).
+App de receitas para quando você abre a geladeira e não sabe o que fazer. Você marca o que tem em casa, chacoalha o celular (ou toca em "Sortear receita") e o app sorteia uma receita que dá para fazer com esses ingredientes, com modo cozinha passo a passo e cronômetro.
+
+Feito com Expo (SDK 58), React Native, TypeScript, expo-router, Zustand e Supabase.
+
+## Como rodar
+
+Precisa do **Node.js 22.13 ou mais novo** (`node -v` para conferir).
 
 ```bash
-npx expo install expo-sensors expo-haptics expo-keep-awake @react-native-async-storage/async-storage
-npx expo install @supabase/supabase-js react-native-url-polyfill
-npm install zustand
+npm install
 npx expo start
 ```
 
-| Tarefa | Pasta |
+Depois disso:
+
+- **No computador:** aperte `w` no terminal para abrir no navegador.
+- **No celular:** instale o app **Expo Go** e leia o QR code que aparece no terminal (celular e computador na mesma rede Wi-Fi). Se não conectar, rode `npx expo start --tunnel`.
+
+O arquivo `.env` já vem com o endereço do banco. Sem internet, o app usa as receitas que vêm junto com ele, então funciona do mesmo jeito.
+
+No navegador o chacoalhar não existe, use o botão "Sortear receita". Vibração, tela sempre acesa e notificações só funcionam no celular.
+
+## Funcionalidades
+
+- **Despensa:** ingredientes por categoria, busca, ingredientes personalizados e seleção salva no celular.
+- **Sorteio:** chacoalhando ou pelo botão. Prioriza receitas em que não falta nada e não repete as últimas sorteadas.
+- **Receita:** mostra o que você tem e o que falta, e manda o que falta para a lista de compras.
+- **Modo cozinha:** um passo por tela, cronômetro nos passos que precisam, vibração e notificação quando o tempo acaba, tela sempre acesa.
+- **Receitas:** as 124 receitas com busca por nome ou ingrediente e filtro por categoria.
+- **Favoritos:** guarda a receita inteira, funciona sem internet.
+- **Compras:** lista com o que falta; o que você marca como comprado vai para a Despensa.
+
+## Estrutura
+
+| Pasta | O que tem |
 |---|---|
-| 1. API de receitas | `src/features/recipes`, `supabase/`, `scripts/recipes` e `src/app/(tabs)/explorar.tsx` |
-| 2. Despensa | `src/features/pantry` e `src/app/(tabs)/index.tsx` |
-| 3. Sensores | `src/features/shake` |
-| 4. Modo cozinha | `src/features/cooking` e `src/app/cozinha` |
-| 5. Favoritos e compras | `src/features/storage` e abas favoritos/compras |
-| 6. UI e navegação | `src/ui`, `src/app/_layout.tsx` |
+| `src/app` | Telas (abas Despensa, Receitas, Favoritos e Compras; Receita e Modo cozinha) |
+| `src/features/recipes` | Acesso ao Supabase, busca e sorteio, receitas locais |
+| `src/features/pantry` | Despensa |
+| `src/features/shake` | Acelerômetro |
+| `src/features/cooking` | Cronômetro e notificações |
+| `src/features/storage` | Favoritos e lista de compras |
+| `src/ui` | Tema e componentes (Button, Card, Chip, Screen) |
+| `supabase/seed.sql` | Tabelas, dados e função de busca do banco |
+| `scripts/recipes` | Fonte das receitas e script que gera os dados |
 
-## Banco de receitas
+## Banco de dados
 
-124 receitas e 105 ingredientes. O app funciona sem banco usando `src/features/recipes/data/`; com o Supabase configurado, ele busca de lá e volta para os dados locais se a conexão falhar.
+Para usar outro projeto do Supabase: rode `supabase/seed.sql` no SQL Editor e troque a URL e a Publishable key no `.env`.
 
-1. Crie um projeto no Supabase, abra o **SQL Editor** e rode `supabase/seed.sql`.
-2. Copie `.env.example` para `.env.local` e preencha com a **Project URL** e a **Publishable key** (Project Settings → API Keys).
-3. Rode `npx expo start -c` para o Expo ler as variáveis.
-
-Funções em `src/features/recipes/service.ts`:
-
-| Função | Uso |
-|---|---|
-| `getRandomRecipe(despensa, excluir?)` | sorteio: prioriza as receitas em que falta menos coisa |
-| `searchByPantry(despensa, maxFaltando?)` | lista completa com `used` e `missing` de cada receita |
-| `getRecipeById(id)` | tela da receita e modo cozinha |
-| `listRecipes({ category, query })` | aba Explorar |
-| `listIngredients()` / `ingredientName(id)` | catálogo da despensa / nome para a lista de compras |
-
-A despensa pode mandar ids (`ovo`) ou nomes (`Ovo`). Sal, óleo, água, açúcar e pimenta-do-reino contam como sempre disponíveis.
-
-Para editar receitas, mexa em `scripts/recipes/source/` e rode `python3 scripts/recipes/build.py`. Ele valida tudo e gera os JSON de `data/` e o `seed.sql`. Depois rode o `seed.sql` de novo no Supabase (ele recria as tabelas).
+Para editar receitas: mexa em `scripts/recipes/source/` e rode `python3 scripts/recipes/build.py`. Ele valida os dados e gera os JSON de `src/features/recipes/data/` e o `seed.sql`.

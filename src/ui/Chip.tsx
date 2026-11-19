@@ -10,11 +10,18 @@ export function Chip({ label, selected, onPress }: Props) {
       accessibilityRole="button"
       accessibilityState={{ selected }}
       style={{
-        minHeight: 44, paddingHorizontal: 16, borderRadius: radius.chip, justifyContent: 'center',
-        borderWidth: 2, borderColor: selected ? colors.green : colors.border,
+        minHeight: 44,
+        paddingHorizontal: 16,
+        borderRadius: radius.chip,
+        justifyContent: 'center',
+        borderWidth: 2,
+        borderColor: selected ? colors.green : colors.border,
         backgroundColor: selected ? colors.green : colors.card,
-      }}>
-      <Text style={{ fontSize: 15, fontWeight: '600', color: selected ? '#fff' : colors.ink }}>{label}</Text>
+      }}
+    >
+      <Text style={{ fontSize: 15, fontWeight: '600', color: selected ? '#fff' : colors.ink }}>
+        {label}
+      </Text>
     </Pressable>
   );
 }

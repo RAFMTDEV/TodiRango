@@ -28,7 +28,7 @@ export const usePantry = create<PantryState>()(
           if (!name) return s;
 
           const alreadyCustom = s.customIngredients.some(
-            (item) => item.name.toLowerCase() === name.toLowerCase()
+            (item) => item.name.toLowerCase() === name.toLowerCase(),
           );
 
           const nextCustom = alreadyCustom
@@ -38,9 +38,7 @@ export const usePantry = create<PantryState>()(
                 { id: `custom-${name.toLowerCase()}-${Date.now()}`, name, category },
               ];
 
-          const nextSelected = s.selected.includes(name)
-            ? s.selected
-            : [...s.selected, name];
+          const nextSelected = s.selected.includes(name) ? s.selected : [...s.selected, name];
 
           return {
             customIngredients: nextCustom,
@@ -52,6 +50,6 @@ export const usePantry = create<PantryState>()(
     {
       name: 'despensa',
       storage: createJSONStorage(() => AsyncStorage),
-    }
-  )
+    },
+  ),
 );

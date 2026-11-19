@@ -7,8 +7,9 @@ type IconName = React.ComponentProps<typeof Ionicons>['name'];
 
 const tabIcon =
   (active: IconName, inactive: IconName) =>
-  ({ color, size, focused }: { color: ColorValue; size: number; focused: boolean }) =>
-    <Ionicons name={focused ? active : inactive} color={color as string} size={size} />;
+  ({ color, size, focused }: { color: ColorValue; size: number; focused: boolean }) => (
+    <Ionicons name={focused ? active : inactive} color={color as string} size={size} />
+  );
 
 export default function TabsLayout() {
   return (
@@ -16,11 +17,24 @@ export default function TabsLayout() {
       screenOptions={{
         tabBarActiveTintColor: colors.green,
         tabBarInactiveTintColor: colors.muted,
-      }}>
-      <Tabs.Screen name="index" options={{ title: 'Despensa', tabBarIcon: tabIcon('basket', 'basket-outline') }} />
-      <Tabs.Screen name="explorar" options={{ title: 'Receitas', tabBarIcon: tabIcon('book', 'book-outline') }} />
-      <Tabs.Screen name="favoritos" options={{ title: 'Favoritos', tabBarIcon: tabIcon('heart', 'heart-outline') }} />
-      <Tabs.Screen name="compras" options={{ title: 'Compras', tabBarIcon: tabIcon('cart', 'cart-outline') }} />
+      }}
+    >
+      <Tabs.Screen
+        name="index"
+        options={{ title: 'Despensa', tabBarIcon: tabIcon('basket', 'basket-outline') }}
+      />
+      <Tabs.Screen
+        name="explorar"
+        options={{ title: 'Receitas', tabBarIcon: tabIcon('book', 'book-outline') }}
+      />
+      <Tabs.Screen
+        name="favoritos"
+        options={{ title: 'Favoritos', tabBarIcon: tabIcon('heart', 'heart-outline') }}
+      />
+      <Tabs.Screen
+        name="compras"
+        options={{ title: 'Compras', tabBarIcon: tabIcon('cart', 'cart-outline') }}
+      />
     </Tabs>
   );
 }

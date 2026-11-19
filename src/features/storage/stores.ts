@@ -6,8 +6,8 @@ import { getRecipeById, ingredientName, toIngredientIds } from '../recipes/servi
 import { addPurchasedToPantry } from './pantrySync';
 
 type FavState = {
-  ids: string[]; // mantido: a tela da receita já usa
-  items: Recipe[]; // receitas completas (funciona offline)
+  ids: string[];
+  items: Recipe[];
   add: (recipe: Recipe) => void;
   toggle: (id: string) => void;
   remove: (id: string) => void;
@@ -48,24 +48,19 @@ export const useFavorites = create<FavState>()(
       version: 1,
       storage: createJSONStorage(() => AsyncStorage),
       partialize: (s) => ({ ids: s.ids, items: s.items }),
-      // v0 guardava só ids. Descartamos o formato antigo com segurança.
       migrate: () => ({ ids: [], items: [] }),
     },
   ),
 );
 
-export const useIsFavorite = (id: string) =>
-  useFavorites((s) => s.ids.includes(id));
+export const useIsFavorite = (id: string) => useFavorites((s) => s.ids.includes(id));
 
-// id = id do ingrediente no catálogo (ex.: "ovo"). Para itens digitados à mão,
-// é o nome normalizado. Assim não há duplicados e a Despensa recebe o id certo.
 export type ShoppingItem = { id: string; name: string; done: boolean };
 
 type ShopState = {
   items: ShoppingItem[];
   add: (name: string) => boolean;
   addMissing: (ids: string[]) => number;
-  /** Alterna comprado/pendente. Devolve true se enviou o item para a Despensa. */
   toggle: (id: string) => boolean;
   remove: (id: string) => void;
   clearDone: () => void;
@@ -92,7 +87,6 @@ export const useShoppingList = create<ShopState>()(
         const toAdd = wanted.filter((id) => !existing.has(id));
         set((s) => ({
           items: [
-            // se já estava na lista como comprado, volta a ser pendente
             ...s.items.map((i) => (wanted.includes(i.id) ? { ...i, done: false } : i)),
             ...toAdd.map((id) => ({ id, name: ingredientName(id), done: false })),
           ],
@@ -106,7 +100,6 @@ export const useShoppingList = create<ShopState>()(
         set((s) => ({
           items: s.items.map((i) => (i.id === id ? { ...i, done } : i)),
         }));
-        // ao marcar como comprado, o ingrediente vai para a Despensa
         return done ? addPurchasedToPantry(item) : false;
       },
       remove: (id) => set((s) => ({ items: s.items.filter((i) => i.id !== id) })),

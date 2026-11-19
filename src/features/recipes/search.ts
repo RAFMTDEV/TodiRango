@@ -1,7 +1,7 @@
-import { PantryMatch, Recipe, RecipeCategory } from "../../types";
+import { PantryMatch, Recipe, RecipeCategory } from '../../types';
 
-const FROM = "áàâãäéèêëíìîïóòôõöúùûüç";
-const TO = "aaaaaeeeeiiiiooooouuuuc";
+const FROM = 'áàâãäéèêëíìîïóòôõöúùûüç';
+const TO = 'aaaaaeeeeiiiiooooouuuuc';
 
 export const normalize = (s: string) =>
   s
@@ -9,11 +9,7 @@ export const normalize = (s: string) =>
     .replace(/[áàâãäéèêëíìîïóòôõöúùûüç]/g, (c) => TO[FROM.indexOf(c)])
     .trim();
 
-export function matchPantry(
-  recipes: Recipe[],
-  pantry: string[],
-  maxMissing = 2,
-): PantryMatch[] {
+export function matchPantry(recipes: Recipe[], pantry: string[], maxMissing = 2): PantryMatch[] {
   const have = new Set(pantry);
   return recipes
     .map((recipe) => ({
@@ -29,11 +25,8 @@ export function matchPantry(
 
 export type RecipeFilter = { category?: RecipeCategory | null; query?: string };
 
-export function filterRecipes(
-  recipes: Recipe[],
-  { category, query }: RecipeFilter = {},
-): Recipe[] {
-  const q = query ? normalize(query) : "";
+export function filterRecipes(recipes: Recipe[], { category, query }: RecipeFilter = {}): Recipe[] {
+  const q = query ? normalize(query) : '';
   return recipes
     .filter((r) => !category || r.category === category)
     .filter(
@@ -42,5 +35,5 @@ export function filterRecipes(
         normalize(r.title).includes(q) ||
         r.ingredients.some((i) => normalize(i.name).includes(q)),
     )
-    .sort((a, b) => a.title.localeCompare(b.title, "pt-BR"));
+    .sort((a, b) => a.title.localeCompare(b.title, 'pt-BR'));
 }

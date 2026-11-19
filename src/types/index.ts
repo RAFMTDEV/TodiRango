@@ -8,16 +8,16 @@ export type Ingredient = {
 export type RecipeStep = { order: number; text: string; timerSeconds?: number };
 
 export type RecipeCategory =
-  | "cafe-da-manha"
-  | "lanche"
-  | "prato-principal"
-  | "acompanhamento"
-  | "sopa"
-  | "salada"
-  | "sobremesa"
-  | "bebida";
+  | 'cafe-da-manha'
+  | 'lanche'
+  | 'prato-principal'
+  | 'acompanhamento'
+  | 'sopa'
+  | 'salada'
+  | 'sobremesa'
+  | 'bebida';
 
-export type Difficulty = "facil" | "media" | "dificil";
+export type Difficulty = 'facil' | 'media' | 'dificil';
 
 export type RecipeIngredient = {
   id: string;

@@ -83,7 +83,6 @@ export default function Compras() {
 
   const pendingCount = items.filter((i) => !i.done).length;
   const doneCount = items.length - pendingCount;
-  // pendentes primeiro; o sort é estável, então a ordem de inclusão se mantém
   const sorted = [...items].sort((a, b) => Number(a.done) - Number(b.done));
 
   const handleAdd = () => {
@@ -120,6 +119,7 @@ export default function Compras() {
           accessibilityLabel="Novo item da lista de compras"
           style={{
             flex: 1,
+            minWidth: 0,
             height: 56,
             borderRadius: radius.button,
             borderWidth: 2,
@@ -158,9 +158,7 @@ export default function Compras() {
         ListEmptyComponent={
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', gap: 8 }}>
             <Text style={{ fontSize: 40 }}>🛒</Text>
-            <Text style={{ fontSize: 20, fontWeight: '800', color: colors.ink }}>
-              Lista vazia
-            </Text>
+            <Text style={{ fontSize: 20, fontWeight: '800', color: colors.ink }}>Lista vazia</Text>
             <Text style={{ color: colors.muted, textAlign: 'center' }}>
               Digite um ingrediente acima para começar.
             </Text>
@@ -168,9 +166,7 @@ export default function Compras() {
         }
       />
 
-      {doneCount > 0 && (
-        <Button label="Limpar comprados" variant="outline" onPress={clearDone} />
-      )}
+      {doneCount > 0 && <Button label="Limpar comprados" variant="outline" onPress={clearDone} />}
     </View>
   );
 }

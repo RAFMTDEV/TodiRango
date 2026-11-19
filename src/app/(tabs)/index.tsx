@@ -2,7 +2,6 @@ import * as Haptics from 'expo-haptics';
 import { useRouter } from 'expo-router';
 import { useMemo, useRef, useState } from 'react';
 import {
-  Alert,
   Animated,
   Easing,
   Pressable,
@@ -15,15 +14,23 @@ import {
 import { INGREDIENTS } from '../../features/pantry/ingredients';
 import { usePantry } from '../../features/pantry/store';
 import { useRecipeHistory } from '../../features/recipes/history';
+import { normalize } from '../../features/recipes/search';
 import { getRandomRecipe } from '../../features/recipes/service';
 import { useShake } from '../../features/shake/useShake';
+import { showAlert } from '../../ui/alert';
 import { Button } from '../../ui/Button';
 import { Chip } from '../../ui/Chip';
 import { colors, radius } from '../../ui/theme';
 
 export default function Despensa() {
   const router = useRouter();
-  const { selected, customIngredients, toggle, addCustomIngredient, clear: clearPantry } = usePantry();
+  const {
+    selected,
+    customIngredients,
+    toggle,
+    addCustomIngredient,
+    clear: clearPantry,
+  } = usePantry();
   const [search, setSearch] = useState('');
 
   const [sorteando, setSorteando] = useState(false);
@@ -32,7 +39,6 @@ export default function Despensa() {
 
   const sorteioEmAndamento = useRef(false);
 
-  
   const animacao = useRef(new Animated.Value(0)).current;
 
   const animacaoLoop = useRef<Animated.CompositeAnimation | null>(null);
@@ -66,13 +72,10 @@ export default function Despensa() {
   };
 
   const sortear = async () => {
-if (sorteioEmAndamento.current) return;
+    if (sorteioEmAndamento.current) return;
 
     if (selected.length === 0) {
-      Alert.alert(
-        "Despensa vazia",
-        "Selecione pelo menos um ingrediente antes de sortear.",
-      );
+      showAlert('Despensa vazia', 'Selecione pelo menos um ingrediente antes de sortear.');
       return;
     }
 
@@ -92,22 +95,21 @@ if (sorteioEmAndamento.current) return;
         recipe = await getRandomRecipe(selected);
 
         if (recipe) {
-          Alert.alert(
-            "Novas opções!",
-            "Você já viu todas as receitas disponíveis. Vamos começar uma nova rodada!",
+          showAlert(
+            'Novas opções!',
+            'Você já viu todas as receitas disponíveis. Vamos começar uma nova rodada!',
           );
         }
       }
 
-      // Garante que a animação fique visível por pelo menos 1,4 segundo
       const tempoRestante = Math.max(0, 1400 - (Date.now() - inicio));
 
       await new Promise<void>((resolve) => setTimeout(resolve, tempoRestante));
 
       if (!recipe) {
-        Alert.alert(
-          "Nenhuma receita encontrada",
-          "Não encontramos receitas com os ingredientes selecionados. Tente marcar outros ingredientes.",
+        showAlert(
+          'Nenhuma receita encontrada',
+          'Não encontramos receitas com os ingredientes selecionados. Tente marcar outros ingredientes.',
         );
         return;
       }
@@ -115,11 +117,8 @@ if (sorteioEmAndamento.current) return;
       add(recipe.id);
 
       router.push(`/receita/${recipe.id}`);
-    } catch (error) {
-      Alert.alert(
-        "Erro ao sortear",
-        "Não foi possível buscar uma receita. Tente novamente.",
-      );
+    } catch {
+      showAlert('Erro ao sortear', 'Não foi possível buscar uma receita. Tente novamente.');
     } finally {
       pararAnimacao();
       sorteioEmAndamento.current = false;
@@ -129,22 +128,17 @@ if (sorteioEmAndamento.current) return;
 
   useShake(sortear);
 
-  const allIngredients = useMemo(
-    () => [...INGREDIENTS, ...customIngredients],
-    [customIngredients]
-  );
+  const allIngredients = useMemo(() => [...INGREDIENTS, ...customIngredients], [customIngredients]);
 
   const filteredIngredients = useMemo(() => {
-    const query = search.trim().toLowerCase();
+    const query = normalize(search);
     if (!query) return allIngredients;
-    return allIngredients.filter((item) =>
-      item.name.toLowerCase().includes(query)
-    );
+    return allIngredients.filter((item) => normalize(item.name).includes(query));
   }, [allIngredients, search]);
 
   const categories = useMemo(
     () => [...new Set(filteredIngredients.map((i) => i.category))],
-    [filteredIngredients]
+    [filteredIngredients],
   );
 
   const handleToggle = (name: string) => {
@@ -165,15 +159,13 @@ if (sorteioEmAndamento.current) return;
     clearPantry();
   };
 
-  // Movimento de giro do prato
   const rotacao = animacao.interpolate({
     inputRange: [0, 1],
-    outputRange: ["0deg", "360deg"],
+    outputRange: ['0deg', '360deg'],
   });
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.bg }}>
-
       <ScrollView
         contentContainerStyle={{ padding: 20, paddingBottom: 32 }}
         keyboardShouldPersistTaps="handled"
@@ -224,9 +216,7 @@ if (sorteioEmAndamento.current) return;
             placeholder="Buscar ou adicionar ingrediente..."
             placeholderTextColor={colors.muted}
             returnKeyType="done"
-            onSubmitEditing={
-              filteredIngredients.length === 0 ? handleAddCustom : undefined
-            }
+            onSubmitEditing={filteredIngredients.length === 0 ? handleAddCustom : undefined}
             style={{
               height: 48,
               backgroundColor: colors.card,
@@ -238,6 +228,12 @@ if (sorteioEmAndamento.current) return;
               color: colors.ink,
             }}
           />
+          {selected.length > 0 && (
+            <Text style={{ marginTop: 8, color: colors.muted, fontWeight: '600' }}>
+              {selected.length}{' '}
+              {selected.length === 1 ? 'ingrediente selecionado' : 'ingredientes selecionados'}
+            </Text>
+          )}
         </View>
 
         {categories.length === 0 ? (
@@ -270,7 +266,6 @@ if (sorteioEmAndamento.current) return;
                 + Adicionar "{search.trim()}"
               </Text>
             </Pressable>
-
           </View>
         ) : (
           categories.map((cat) => (
@@ -302,7 +297,7 @@ if (sorteioEmAndamento.current) return;
         )}
       </ScrollView>
 
-<View
+      <View
         style={{
           padding: 20,
           borderTopWidth: 1,
@@ -311,16 +306,14 @@ if (sorteioEmAndamento.current) return;
         }}
       >
         <Button
-          label={
-            sorteando ? "Sorteando..." : `Sortear receita (${selected.length})`
-          }
+          label={sorteando ? 'Sorteando...' : `Sortear receita (${selected.length})`}
           onPress={sortear}
           disabled={sorteando}
         />
 
         <Text
           style={{
-            textAlign: "center",
+            textAlign: 'center',
             marginTop: 8,
             color: colors.muted,
           }}
@@ -329,18 +322,17 @@ if (sorteioEmAndamento.current) return;
         </Text>
       </View>
 
-      {/* Tela de animação do sorteio */}
       {sorteando && (
         <View
           style={{
-            position: "absolute",
+            position: 'absolute',
             top: 0,
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: "rgba(0,0,0,0.65)",
-            justifyContent: "center",
-            alignItems: "center",
+            backgroundColor: 'rgba(0,0,0,0.65)',
+            justifyContent: 'center',
+            alignItems: 'center',
           }}
         >
           <View
@@ -348,8 +340,8 @@ if (sorteioEmAndamento.current) return;
               backgroundColor: colors.bg,
               padding: 35,
               borderRadius: 24,
-              alignItems: "center",
-              width: "82%",
+              alignItems: 'center',
+              width: '82%',
             }}
           >
             <Animated.Text
@@ -364,10 +356,10 @@ if (sorteioEmAndamento.current) return;
             <Text
               style={{
                 fontSize: 21,
-                fontWeight: "800",
+                fontWeight: '800',
                 color: colors.ink,
                 marginTop: 20,
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
               Preparando sua receita...
@@ -378,7 +370,7 @@ if (sorteioEmAndamento.current) return;
                 fontSize: 14,
                 color: colors.muted,
                 marginTop: 10,
-                textAlign: "center",
+                textAlign: 'center',
               }}
             >
               Misturando seus ingredientes!

@@ -1,20 +1,15 @@
-import { Pressable, Text } from "react-native";
-import { colors, radius } from "./theme";
+import { Pressable, Text } from 'react-native';
+import { colors, radius } from './theme';
 
 type Props = {
   label: string;
   onPress: () => void;
-  variant?: "primary" | "outline";
+  variant?: 'primary' | 'outline';
   disabled?: boolean;
 };
 
-export function Button({
-  label,
-  onPress,
-  variant = "primary",
-  disabled = false,
-}: Props) {
-  const primary = variant === "primary";
+export function Button({ label, onPress, variant = 'primary', disabled = false }: Props) {
+  const primary = variant === 'primary';
 
   return (
     <Pressable
@@ -25,8 +20,8 @@ export function Button({
       style={{
         height: 56,
         borderRadius: radius.button,
-        alignItems: "center",
-        justifyContent: "center",
+        alignItems: 'center',
+        justifyContent: 'center',
         backgroundColor: primary ? colors.orange : colors.card,
         borderWidth: primary ? 0 : 2,
         borderColor: colors.green,
@@ -36,7 +31,7 @@ export function Button({
       <Text
         style={{
           fontSize: 17,
-          fontWeight: "800",
+          fontWeight: '800',
           color: primary ? colors.ink : colors.green,
         }}
       >
